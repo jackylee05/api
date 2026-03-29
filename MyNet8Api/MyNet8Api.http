@@ -1,0 +1,71 @@
+@MyNet8Api_HostAddress = http://localhost:5160
+
+### 健康检查
+GET {{MyNet8Api_HostAddress}}/health
+Accept: application/json
+
+### 获取所有用户
+GET {{MyNet8Api_HostAddress}}/api/users
+Accept: application/json
+
+### 根据ID获取用户
+GET {{MyNet8Api_HostAddress}}/api/users/1
+Accept: application/json
+
+### 创建新用户
+POST {{MyNet8Api_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "name": "赵六",
+  "email": "zhaoliu@example.com",
+  "age": 35
+}
+
+### 更新用户
+PUT {{MyNet8Api_HostAddress}}/api/users/1
+Content-Type: application/json
+
+{
+  "name": "张三(已更新)",
+  "email": "zhangsan.updated@example.com",
+  "age": 26
+}
+
+### 删除用户
+DELETE {{MyNet8Api_HostAddress}}/api/users/4
+
+### 获取所有产品
+GET {{MyNet8Api_HostAddress}}/api/products
+Accept: application/json
+
+### 搜索产品
+GET {{MyNet8Api_HostAddress}}/api/products?search=笔记本
+Accept: application/json
+
+### 根据ID获取产品
+GET {{MyNet8Api_HostAddress}}/api/products/1
+Accept: application/json
+
+### 创建新产品
+POST {{MyNet8Api_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "显示器",
+  "description": "27英寸4K显示器",
+  "price": 1999.00,
+  "stock": 50
+}
+
+### 更新产品
+PUT {{MyNet8Api_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "笔记本电脑(升级版)",
+  "price": 6999.00
+}
+
+### 删除产品
+DELETE {{MyNet8Api_HostAddress}}/api/products/4
