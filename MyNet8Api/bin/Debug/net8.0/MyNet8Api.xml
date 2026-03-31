@@ -4,6 +4,41 @@
         <name>MyNet8Api</name>
     </assembly>
     <members>
+        <member name="M:MyNet8Api.Controllers.AuthController.Login(MyNet8Api.Models.LoginRequest)">
+            <summary>
+            用户登录
+            </summary>
+        </member>
+        <member name="M:MyNet8Api.Controllers.AuthController.Register(MyNet8Api.Models.RegisterRequest)">
+            <summary>
+            用户注册
+            </summary>
+        </member>
+        <member name="M:MyNet8Api.Controllers.AuthController.RefreshToken(MyNet8Api.Controllers.RefreshTokenRequest)">
+            <summary>
+            刷新令牌
+            </summary>
+        </member>
+        <member name="M:MyNet8Api.Controllers.AuthController.GenerateJwtToken(MyNet8Api.Controllers.AuthUser)">
+            <summary>
+            生成JWT令牌
+            </summary>
+        </member>
+        <member name="M:MyNet8Api.Controllers.AuthController.GenerateRefreshToken">
+            <summary>
+            生成刷新令牌
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Controllers.RefreshTokenRequest">
+            <summary>
+            刷新令牌请求
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Controllers.AuthUser">
+            <summary>
+            认证用户类
+            </summary>
+        </member>
         <member name="M:MyNet8Api.Controllers.ProductsController.GetAll(System.String)">
             <summary>
             获取所有产品
@@ -62,6 +97,26 @@
         <member name="T:MyNet8Api.Models.PagedResponse`1">
             <summary>
             分页响应
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Models.LoginRequest">
+            <summary>
+            登录请求
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Models.RegisterRequest">
+            <summary>
+            注册请求
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Models.AuthResponse">
+            <summary>
+            认证响应
+            </summary>
+        </member>
+        <member name="T:MyNet8Api.Models.UserInfo">
+            <summary>
+            用户信息
             </summary>
         </member>
         <member name="T:MyNet8Api.Models.Product">

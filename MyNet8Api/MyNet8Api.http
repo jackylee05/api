@@ -4,17 +4,57 @@
 GET {{MyNet8Api_HostAddress}}/health
 Accept: application/json
 
-### 获取所有用户
+### 用户登录（管理员）
+POST {{MyNet8Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+### 用户登录（普通用户）
+POST {{MyNet8Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user123"
+}
+
+### 用户注册
+POST {{MyNet8Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "newuser123",
+  "email": "newuser@example.com",
+  "name": "新用户"
+}
+
+### 刷新令牌
+POST {{MyNet8Api_HostAddress}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "your-refresh-token"
+}
+
+### 获取所有用户（需要认证）
 GET {{MyNet8Api_HostAddress}}/api/users
 Accept: application/json
+Authorization: Bearer {{token}}
 
-### 根据ID获取用户
+### 根据ID获取用户（需要认证）
 GET {{MyNet8Api_HostAddress}}/api/users/1
 Accept: application/json
+Authorization: Bearer {{token}}
 
-### 创建新用户
+### 创建新用户（需要Admin角色）
 POST {{MyNet8Api_HostAddress}}/api/users
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "name": "赵六",
@@ -22,9 +62,10 @@ Content-Type: application/json
   "age": 35
 }
 
-### 更新用户
+### 更新用户（需要Admin角色）
 PUT {{MyNet8Api_HostAddress}}/api/users/1
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "name": "张三(已更新)",
@@ -32,24 +73,29 @@ Content-Type: application/json
   "age": 26
 }
 
-### 删除用户
+### 删除用户（需要Admin角色）
 DELETE {{MyNet8Api_HostAddress}}/api/users/4
+Authorization: Bearer {{token}}
 
-### 获取所有产品
+### 获取所有产品（需要认证）
 GET {{MyNet8Api_HostAddress}}/api/products
 Accept: application/json
+Authorization: Bearer {{token}}
 
-### 搜索产品
+### 搜索产品（需要认证）
 GET {{MyNet8Api_HostAddress}}/api/products?search=笔记本
 Accept: application/json
+Authorization: Bearer {{token}}
 
-### 根据ID获取产品
+### 根据ID获取产品（需要认证）
 GET {{MyNet8Api_HostAddress}}/api/products/1
 Accept: application/json
+Authorization: Bearer {{token}}
 
-### 创建新产品
+### 创建新产品（需要Admin角色）
 POST {{MyNet8Api_HostAddress}}/api/products
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "name": "显示器",
@@ -58,14 +104,16 @@ Content-Type: application/json
   "stock": 50
 }
 
-### 更新产品
+### 更新产品（需要Admin角色）
 PUT {{MyNet8Api_HostAddress}}/api/products/1
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
   "name": "笔记本电脑(升级版)",
   "price": 6999.00
 }
 
-### 删除产品
+### 删除产品（需要Admin角色）
 DELETE {{MyNet8Api_HostAddress}}/api/products/4
+Authorization: Bearer {{token}}

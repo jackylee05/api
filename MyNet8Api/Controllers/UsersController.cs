@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using MyNet8Api.Models;
 
 namespace MyNet8Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class UsersController : ControllerBase
 {
     private static readonly List<User> _users = new()
@@ -43,6 +45,7 @@ public class UsersController : ControllerBase
     /// 创建新用户
     /// </summary>
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public ActionResult<User> Create([FromBody] CreateUserRequest request)
     {
         if (!ModelState.IsValid)
@@ -66,6 +69,7 @@ public class UsersController : ControllerBase
     /// 更新用户信息
     /// </summary>
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public ActionResult<User> Update(int id, [FromBody] UpdateUserRequest request)
     {
         var user = _users.FirstOrDefault(u => u.Id == id);
@@ -85,6 +89,7 @@ public class UsersController : ControllerBase
     /// 删除用户
     /// </summary>
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public ActionResult Delete(int id)
     {
         var user = _users.FirstOrDefault(u => u.Id == id);

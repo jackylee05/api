@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using MyNet8Api.Models;
 
 namespace MyNet8Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ProductsController : ControllerBase
 {
     private static readonly List<Product> _products = new()
@@ -52,6 +54,7 @@ public class ProductsController : ControllerBase
     /// 创建新产品
     /// </summary>
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public ActionResult<Product> Create([FromBody] CreateProductRequest request)
     {
         if (!ModelState.IsValid)
@@ -76,6 +79,7 @@ public class ProductsController : ControllerBase
     /// 更新产品信息
     /// </summary>
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public ActionResult<Product> Update(int id, [FromBody] UpdateProductRequest request)
     {
         var product = _products.FirstOrDefault(p => p.Id == id);
@@ -96,6 +100,7 @@ public class ProductsController : ControllerBase
     /// 删除产品
     /// </summary>
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public ActionResult Delete(int id)
     {
         var product = _products.FirstOrDefault(p => p.Id == id);

@@ -36,3 +36,13 @@ D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\MyNet8Api.xml
 D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\MyNet8Api.pdb
 D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\MyNet8Api.genruntimeconfig.cache
 D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\ref\MyNet8Api.dll
+D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\MyNet8Api.sourcelink.json
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\test_trae\trae3\MyNet8Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\test_trae\trae3\MyNet8Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

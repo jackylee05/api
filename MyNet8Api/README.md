@@ -7,6 +7,8 @@
 - ✅ RESTful API 设计
 - ✅ Swagger/OpenAPI 文档
 - ✅ CORS 跨域支持
+- ✅ JWT 认证与授权
+- ✅ 角色权限控制
 - ✅ 数据验证
 - ✅ 健康检查端点
 - ✅ 完整的 CRUD 操作示例
@@ -16,25 +18,32 @@
 ### 健康检查
 | 方法 | 端点 | 描述 |
 |------|------|------|
-| GET | `/health` | 检查API服务状态 |
+| GET | `/health` | 检查API服务状态（无需认证） |
+
+### 认证管理
+| 方法 | 端点 | 描述 |
+|------|------|------|
+| POST | `/api/auth/login` | 用户登录（无需认证） |
+| POST | `/api/auth/register` | 用户注册（无需认证） |
+| POST | `/api/auth/refresh` | 刷新令牌（无需认证） |
 
 ### 用户管理
-| 方法 | 端点 | 描述 |
-|------|------|------|
-| GET | `/api/users` | 获取所有用户 |
-| GET | `/api/users/{id}` | 根据ID获取用户 |
-| POST | `/api/users` | 创建新用户 |
-| PUT | `/api/users/{id}` | 更新用户信息 |
-| DELETE | `/api/users/{id}` | 删除用户 |
+| 方法 | 端点 | 描述 | 权限 |
+|------|------|------|------|
+| GET | `/api/users` | 获取所有用户 | 需认证 |
+| GET | `/api/users/{id}` | 根据ID获取用户 | 需认证 |
+| POST | `/api/users` | 创建新用户 | Admin角色 |
+| PUT | `/api/users/{id}` | 更新用户信息 | Admin角色 |
+| DELETE | `/api/users/{id}` | 删除用户 | Admin角色 |
 
 ### 产品管理
-| 方法 | 端点 | 描述 |
-|------|------|------|
-| GET | `/api/products` | 获取所有产品（支持搜索） |
-| GET | `/api/products/{id}` | 根据ID获取产品 |
-| POST | `/api/products` | 创建新产品 |
-| PUT | `/api/products/{id}` | 更新产品信息 |
-| DELETE | `/api/products/{id}` | 删除产品 |
+| 方法 | 端点 | 描述 | 权限 |
+|------|------|------|------|
+| GET | `/api/products` | 获取所有产品（支持搜索） | 需认证 |
+| GET | `/api/products/{id}` | 根据ID获取产品 | 需认证 |
+| POST | `/api/products` | 创建新产品 | Admin角色 |
+| PUT | `/api/products/{id}` | 更新产品信息 | Admin角色 |
+| DELETE | `/api/products/{id}` | 删除产品 | Admin角色 |
 
 ## 快速开始
 
@@ -58,22 +67,44 @@ http://localhost:5160/swagger
 
 ### 3. 测试 API
 
-可以使用 `.http` 文件中的请求示例，或使用 curl：
+#### 登录获取令牌
+
+**管理员账户：**
+- 用户名：`admin`
+- 密码：`admin123`
+
+**普通用户账户：**
+- 用户名：`user`
+- 密码：`user123`
 
 ```bash
-# 获取所有用户
-curl http://localhost:5160/api/users
+# 管理员登录
+curl -X POST http://localhost:5160/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"admin123"}'
 
-# 创建新用户
+# 普通用户登录
+curl -X POST http://localhost:5160/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"user","password":"user123"}'
+```
+
+#### 使用令牌访问受保护的 API
+
+```bash
+# 获取所有用户（需要认证）
+curl http://localhost:5160/api/users \
+  -H "Authorization: Bearer your-token-here"
+
+# 创建新用户（需要Admin角色）
 curl -X POST http://localhost:5160/api/users \
   -H "Content-Type: application/json" \
-  -d '{"name":"测试用户","email":"test@example.com","age":25}'
+  -H "Authorization: Bearer your-token-here" \
+  -d '{"name":"赵六","email":"zhaoliu@example.com","age":35}'
 
-# 获取所有产品
-curl http://localhost:5160/api/products
-
-# 搜索产品
-curl "http://localhost:5160/api/products?search=笔记本"
+# 获取所有产品（需要认证）
+curl http://localhost:5160/api/products \
+  -H "Authorization: Bearer your-token-here"
 ```
 
 ## 项目结构
@@ -81,11 +112,13 @@ curl "http://localhost:5160/api/products?search=笔记本"
 ```
 MyNet8Api/
 ├── Controllers/
+│   ├── AuthController.cs       # 认证管理API
 │   ├── UsersController.cs      # 用户管理API
 │   └── ProductsController.cs   # 产品管理API
 ├── Models/
 │   ├── User.cs                 # 用户模型
 │   ├── Product.cs              # 产品模型
+│   ├── Auth.cs                 # 认证相关模型
 │   └── ApiResponse.cs          # 统一响应格式
 ├── Program.cs                  # 应用程序入口
 ├── appsettings.json            # 配置文件
@@ -99,25 +132,35 @@ MyNet8Api/
 ### JavaScript/Fetch 示例
 
 ```javascript
-// 获取用户列表
-fetch('http://localhost:5160/api/users')
-  .then(response => response.json())
-  .then(data => console.log(data));
+// 登录获取令牌
+async function login() {
+  const response = await fetch('http://localhost:5160/api/auth/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: 'admin',
+      password: 'admin123'
+    })
+  });
+  const data = await response.json();
+  return data.token;
+}
 
-// 创建新用户
-fetch('http://localhost:5160/api/users', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    name: '新用户',
-    email: 'newuser@example.com',
-    age: 30
-  })
-})
-.then(response => response.json())
-.then(data => console.log(data));
+// 使用令牌获取用户列表
+async function getUsers() {
+  const token = await login();
+  const response = await fetch('http://localhost:5160/api/users', {
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+  });
+  const users = await response.json();
+  console.log(users);
+}
+
+getUsers();
 ```
 
 ### Python/Requests 示例
@@ -125,19 +168,25 @@ fetch('http://localhost:5160/api/users', {
 ```python
 import requests
 
-# 获取所有用户
-response = requests.get('http://localhost:5160/api/users')
-users = response.json()
-print(users)
+# 登录获取令牌
+def login():
+    response = requests.post('http://localhost:5160/api/auth/login', json={
+        'username': 'admin',
+        'password': 'admin123'
+    })
+    return response.json()['token']
 
-# 创建新用户
-new_user = {
-    "name": "Python用户",
-    "email": "python@example.com",
-    "age": 28
-}
-response = requests.post('http://localhost:5160/api/users', json=new_user)
-print(response.json())
+# 使用令牌获取用户列表
+def get_users():
+    token = login()
+    headers = {
+        'Authorization': f'Bearer {token}'
+    }
+    response = requests.get('http://localhost:5160/api/users', headers=headers)
+    users = response.json()
+    print(users)
+
+get_users()
 ```
 
 ## 数据模型
@@ -163,25 +212,46 @@ print(response.json())
 }
 ```
 
+### 认证响应
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "refreshToken": "550e8400-e29b-41d4-a716-446655440000",
+  "expiresAt": "2024-01-01T12:00:00Z",
+  "user": {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@example.com",
+    "name": "管理员",
+    "roles": ["Admin"]
+  }
+}
+```
+
 ## 开发说明
 
 ### 添加新的 API 控制器
 
 1. 在 `Controllers` 文件夹中创建新的控制器类
 2. 继承 `ControllerBase` 并添加 `[ApiController]` 和 `[Route]` 特性
-3. 实现所需的 API 方法
+3. 根据需要添加 `[Authorize]` 特性和角色要求
 
-### 配置 CORS
+### 配置 JWT
 
-在 `Program.cs` 中修改 CORS 策略：
+在 `appsettings.json` 中修改 JWT 配置：
 
-```csharp
-// 允许所有来源（开发环境）
-app.UseCors("AllowAll");
-
-// 或允许特定来源（生产环境）
-app.UseCors("AllowSpecificOrigins");
+```json
+"Jwt": {
+  "Key": "your-super-secret-key-for-jwt-authentication",
+  "Issuer": "MyNet8Api",
+  "Audience": "MyNet8ApiUsers"
+}
 ```
+
+### 角色权限控制
+
+- **[Authorize]** - 只需要认证
+- **[Authorize(Roles = "Admin")]** - 需要 Admin 角色
 
 ## 部署
 
