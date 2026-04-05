@@ -1,0 +1,16 @@
+D:\test_trae\trae3\Hichain.Entity\bin\Release\net8.0\Hichain.Entity.deps.json
+D:\test_trae\trae3\Hichain.Entity\bin\Release\net8.0\Hichain.Entity.dll
+D:\test_trae\trae3\Hichain.Entity\bin\Release\net8.0\Hichain.Entity.pdb
+D:\test_trae\trae3\Hichain.Entity\bin\Release\net8.0\Hichain.Common.dll
+D:\test_trae\trae3\Hichain.Entity\bin\Release\net8.0\Hichain.Common.pdb
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.csproj.AssemblyReference.cache
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.AssemblyInfoInputs.cache
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.AssemblyInfo.cs
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.csproj.CoreCompileInputs.cache
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.sourcelink.json
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain..515055C5.Up2Date
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.dll
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\refint\Hichain.Entity.dll
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\Hichain.Entity.pdb
+D:\test_trae\trae3\Hichain.Entity\obj\Release\net8.0\ref\Hichain.Entity.dll

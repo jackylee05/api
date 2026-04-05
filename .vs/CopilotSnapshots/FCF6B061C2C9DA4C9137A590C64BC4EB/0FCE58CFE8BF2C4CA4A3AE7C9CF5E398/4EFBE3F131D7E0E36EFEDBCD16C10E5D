@@ -1,0 +1,138 @@
+﻿using System.Reflection;
+using Hichain.Business.Services;
+using Hichain.Common.Utilities;
+using Hichain.Entity.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// 配置数据库连接
+var databaseType = builder.Configuration.GetValue<DatabaseType>("Database:Type", DatabaseType.SqlServer);
+var connectionString = GetConnectionString(builder.Configuration, databaseType);
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    switch (databaseType)
+    {
+        case DatabaseType.SqlServer:
+            options.UseSqlServer(connectionString);
+            break;
+        case DatabaseType.PostgreSQL:
+            options.UseNpgsql(connectionString);
+            break;
+    }
+});
+
+// 配置 JWT 认证
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                builder.Configuration["Jwt:Key"] ?? "your-secret-key"
+            ))
+        };
+    });
+
+// 注册服务
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+// 注册解析后的 DatabaseType，使其可以被 DI 注入到 AppDbContext 的构造函数中
+builder.Services.AddSingleton(databaseType);
+
+// 添加控制器
+builder.Services.AddControllers();
+
+// 配置 Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    // 添加 XML 注释
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+    if (File.Exists(xmlPath))
+    {
+        options.IncludeXmlComments(xmlPath);
+    }
+
+    // 配置 JWT 认证
+    options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Description = "JWT 认证（Bearer token）",
+        Name = "Authorization",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
+    });
+
+    options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
+// 配置 CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+var app = builder.Build();
+
+// 配置中间件
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseCors("AllowAll");
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
+
+// 健康检查端点
+app.MapGet("/health", () => new { Status = "Healthy", Timestamp = DateTime.UtcNow })
+   .WithName("HealthCheck")
+   .WithOpenApi();
+
+app.Run();
+
+// 获取连接字符串
+string GetConnectionString(IConfiguration configuration, DatabaseType databaseType)
+{
+    return databaseType switch
+    {
+        DatabaseType.SqlServer => configuration.GetValue<string>("Database:SqlServer:ConnectionString", "Server=(localdb)\\mssqllocaldb;Database=HichainDB;Trusted_Connection=True;"),
+        DatabaseType.PostgreSQL => configuration.GetValue<string>("Database:PostgreSQL:ConnectionString", "Host=localhost;Port=5432;Database=hichaindb;Username=postgres;Password=postgres;"),
+        _ => throw new NotSupportedException($"不支持的数据库类型: {databaseType}")
+    };
+}

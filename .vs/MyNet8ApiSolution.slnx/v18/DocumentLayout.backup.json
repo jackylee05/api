@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\test_trae\\trae3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|d:\\test_trae\\trae3\\mynet8api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|solutionrelative:mynet8api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|d:\\test_trae\\trae3\\mynet8api\\mynet8api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|solutionrelative:mynet8api\\mynet8api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|d:\\test_trae\\trae3\\mynet8api\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|solutionrelative:mynet8api\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|d:\\test_trae\\trae3\\mynet8api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|solutionrelative:mynet8api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|d:\\test_trae\\trae3\\mynet8api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEAFCD85-5DD2-C435-BC8D-90F541930298}|MyNet8Api\\MyNet8Api.csproj|solutionrelative:mynet8api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyNet8Api",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\MyNet8Api\\MyNet8Api.csproj",
+              "RelativeDocumentMoniker": "MyNet8Api\\MyNet8Api.csproj",
+              "ToolTip": "D:\\test_trae\\trae3\\MyNet8Api\\MyNet8Api.csproj",
+              "RelativeToolTip": "MyNet8Api\\MyNet8Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-29T13:29:20.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\MyNet8Api\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "MyNet8Api\\Models\\ApiResponse.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\MyNet8Api\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "MyNet8Api\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:15:57.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\MyNet8Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MyNet8Api\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\MyNet8Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MyNet8Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:15:54.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\MyNet8Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "MyNet8Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\MyNet8Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "MyNet8Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:15:14.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\MyNet8Api\\Program.cs",
+              "RelativeDocumentMoniker": "MyNet8Api\\Program.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\MyNet8Api\\Program.cs",
+              "RelativeToolTip": "MyNet8Api\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T12:13:38.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
