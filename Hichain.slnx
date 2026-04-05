@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/01.Hichain.Common/">
+    <Project Path="Hichain.Common/Hichain.Common.csproj" />
+  </Folder>
+  <Folder Name="/02.Hichain.Entity/">
+    <Project Path="Hichain.Entity/Hichain.Entity.csproj" />
+  </Folder>
+  <Folder Name="/03.Hichain.Business/">
+    <Project Path="Hichain.Business/Hichain.Business.csproj" />
+  </Folder>
+  <Folder Name="/06.Hichain.WebUI/">
+    <Project Path="Hichain.WebAPI/Hichain.WebAPI.csproj" />
+  </Folder>
+</Solution>
