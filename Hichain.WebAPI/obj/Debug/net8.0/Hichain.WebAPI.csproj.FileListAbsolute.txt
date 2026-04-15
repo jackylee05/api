@@ -157,3 +157,12 @@ D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\nlog.config
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Dapper.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.pdb

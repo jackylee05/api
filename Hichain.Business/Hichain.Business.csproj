@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Hichain.Common\Hichain.Common.csproj" />
     <ProjectReference Include="..\Hichain.Entity\Hichain.Entity.csproj" />
+    <ProjectReference Include="..\Hichain.DataAccess\Hichain.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

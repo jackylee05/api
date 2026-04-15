@@ -2,11 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Hichain.Business.Services;
 using Hichain.Entity.Entities;
+using Hichain.Common.Models;
 
 namespace Hichain.WebAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [Authorize]
 public class UsersController : ControllerBase
 {
@@ -21,24 +22,25 @@ public class UsersController : ControllerBase
     /// 获取所有用户
     /// </summary>
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> GetAll()
+    [Authorize]
+    public async Task<ActionResult<ApiResponse<IEnumerable<User>>>> GetAll()
     {
         var users = await _userService.GetAllUsersAsync();
-        return Ok(users);
+        return Ok(ApiResponse<IEnumerable<User>>.Ok(users));
     }
 
     /// <summary>
     /// 根据ID获取用户
     /// </summary>
     [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetById(int id)
+    public async Task<ActionResult<ApiResponse<User>>> GetById(int id)
     {
         var user = await _userService.GetUserByIdAsync(id);
         if (user == null)
         {
-            return NotFound(new { Message = $"未找到ID为 {id} 的用户" });
+            return NotFound(ApiResponse<User>.Fail(404, $"未找到ID为 {id} 的用户"));
         }
-        return Ok(user);
+        return Ok(ApiResponse<User>.Ok(user));
     }
 
     /// <summary>
@@ -46,10 +48,10 @@ public class UsersController : ControllerBase
     /// </summary>
     [HttpPost]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult<User>> Create([FromBody] User user)
+    public async Task<ActionResult<ApiResponse<User>>> Create([FromBody] User user)
     {
         var createdUser = await _userService.CreateUserAsync(user);
-        return CreatedAtAction(nameof(GetById), new { id = createdUser.Id }, createdUser);
+        return Ok(ApiResponse<User>.Ok(null, "用户创建成功"));
     }
 
     /// <summary>
@@ -57,21 +59,21 @@ public class UsersController : ControllerBase
     /// </summary>
     [HttpPut("{id}")]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult<User>> Update(int id, [FromBody] User user)
+    public async Task<ActionResult<ApiResponse<User>>> Update(int id, [FromBody] User user)
     {
         if (id != user.Id)
         {
-            return BadRequest(new { Message = "ID不匹配" });
+            return BadRequest(ApiResponse<User>.Fail(400, "ID不匹配"));
         }
 
         var existingUser = await _userService.GetUserByIdAsync(id);
         if (existingUser == null)
         {
-            return NotFound(new { Message = $"未找到ID为 {id} 的用户" });
+            return NotFound(ApiResponse<User>.Fail(404, $"未找到ID为 {id} 的用户"));
         }
 
         var updatedUser = await _userService.UpdateUserAsync(user);
-        return Ok(updatedUser);
+        return Ok(ApiResponse<User>.Ok(updatedUser, "用户更新成功"));
     }
 
     /// <summary>
@@ -79,13 +81,13 @@ public class UsersController : ControllerBase
     /// </summary>
     [HttpDelete("{id}")]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult> Delete(int id)
+    public async Task<ActionResult<ApiResponse>> Delete(int id)
     {
         var success = await _userService.DeleteUserAsync(id);
         if (!success)
         {
-            return NotFound(new { Message = $"未找到ID为 {id} 的用户" });
+            return NotFound(ApiResponse.Fail(404, $"未找到ID为 {id} 的用户"));
         }
-        return NoContent();
+        return Ok(ApiResponse.Ok("用户删除成功"));
     }
 }

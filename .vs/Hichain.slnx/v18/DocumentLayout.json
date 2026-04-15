@@ -3,20 +3,92 @@
   "WorkspaceRootPath": "D:\\test_trae\\trae3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\database\\sqlserverdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\database\\sqlserverdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontext\\eflogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontext\\eflogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontext\\sqlserverdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontext\\sqlserverdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\hichain.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|solutionrelative:hichain.dataaccess\\hichain.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\extension.exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\extension.exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\extension.convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\extension.convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|solutionrelative:hichain.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|solutionrelative:hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|d:\\test_trae\\trae3\\hichain.entity\\data\\databasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|solutionrelative:hichain.entity\\data\\databasetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\configurationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|d:\\test_trae\\trae3\\hichain.entity\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|solutionrelative:hichain.entity\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|solutionrelative:hichain.webapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{204630FD-D3FB-CF25-F57D-C31690C2C063}|Hichain.WebAPI\\Hichain.WebAPI.csproj|d:\\test_trae\\trae3\\hichain.webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,18 +99,6 @@
       "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\loggerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|d:\\test_trae\\trae3\\hichain.entity\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|solutionrelative:hichain.entity\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,8 +107,8 @@
       "RelativeMoniker": "D:0:0:{C4B0B3AF-4CEC-8AB5-3732-9B281C0F1D1C}|Hichain.Entity\\Hichain.Entity.csproj|solutionrelative:hichain.entity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\services\\bulkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\services\\bulkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,66 +118,226 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "nlog.config",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\nlog.config",
-              "RelativeDocumentMoniker": "Hichain.WebAPI\\nlog.config",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\nlog.config",
-              "RelativeToolTip": "Hichain.WebAPI\\nlog.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-04-05T13:55:59.334Z",
+              "DocumentIndex": 4,
+              "Title": "Extension.Exception.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Exception.cs",
+              "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Exception.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Exception.cs",
+              "RelativeToolTip": "Hichain.Common\\Utilities\\Extension.Exception.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:14:00.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoggerHelper.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LoggerHelper.cs",
-              "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\LoggerHelper.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LoggerHelper.cs",
-              "RelativeToolTip": "Hichain.Common\\Utilities\\LoggerHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Extension.Convert.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Convert.cs",
+              "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Convert.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Convert.cs",
+              "RelativeToolTip": "Hichain.Common\\Utilities\\Extension.Convert.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:25:55.988Z"
+              "WhenOpened": "2026-04-15T10:10:29.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Hichain.Business\\Services\\UserService.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\UserService.cs",
-              "RelativeToolTip": "Hichain.Business\\Services\\UserService.cs",
+              "DocumentIndex": 3,
+              "Title": "Hichain.DataAccess",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "RelativeToolTip": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:25:15.633Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-15T06:07:29.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Hichain.Business\\Services\\ProductService.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\ProductService.cs",
-              "RelativeToolTip": "Hichain.Business\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SqlServerDatabase.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "ViewState": "AgIAANYCAAAAAAAAAAAuwCAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:25:14.753Z",
+              "WhenOpened": "2026-04-15T09:41:24.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SqlServerDbContext.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContext\\SqlServerDbContext.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContext\\SqlServerDbContext.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContext\\SqlServerDbContext.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContext\\SqlServerDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:56:02.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EFLogger.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContext\\EFLogger.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContext\\EFLogger.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContext\\EFLogger.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContext\\EFLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:03:57.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogHelper.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LogHelper.cs",
+              "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\LogHelper.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LogHelper.cs",
+              "RelativeToolTip": "Hichain.Common\\Utilities\\LogHelper.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:07:28.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Class1.cs",
+              "RelativeDocumentMoniker": "Hichain.Common\\Class1.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Class1.cs",
+              "RelativeToolTip": "Hichain.Common\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:10:35.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BulkConfig.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\BulkConfig.cs",
+              "RelativeDocumentMoniker": "Hichain.Business\\Services\\BulkConfig.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\BulkConfig.cs",
+              "RelativeToolTip": "Hichain.Business\\Services\\BulkConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:50:18.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IDatabase.cs",
+              "RelativeDocumentMoniker": "Hichain.Business\\Services\\IDatabase.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IDatabase.cs",
+              "RelativeToolTip": "Hichain.Business\\Services\\IDatabase.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:13:19.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\DbHelper.cs",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\DbHelper.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\DbHelper.cs",
+              "RelativeToolTip": "Hichain.DataAccess\\DbHelper.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAASwPoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:04:31.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DatabaseType.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\DatabaseType.cs",
+              "RelativeDocumentMoniker": "Hichain.Entity\\Data\\DatabaseType.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\DatabaseType.cs",
+              "RelativeToolTip": "Hichain.Entity\\Data\\DatabaseType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T05:57:59.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\Repository.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Repository.cs",
+              "RelativeToolTip": "Hichain.DataAccess\\Repository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwBIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T13:09:22.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Hichain.Business\\Services\\UserService.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\UserService.cs",
+              "RelativeToolTip": "Hichain.Business\\Services\\UserService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAewIQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T09:22:46.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\Program.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Program.cs",
+              "RelativeToolTip": "Hichain.WebAPI\\Program.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAJQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T04:13:12.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "ConfigurationHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\ConfigurationHelper.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\ConfigurationHelper.cs",
@@ -125,12 +345,37 @@
               "RelativeToolTip": "Hichain.Common\\Utilities\\ConfigurationHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:24:10.645Z",
+              "WhenOpened": "2026-04-01T10:24:10.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Hichain.WebAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwDQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T13:14:51.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\appsettings.json",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\appsettings.json",
+              "RelativeToolTip": "Hichain.WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-15T06:11:03.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Entities\\Product.cs",
@@ -138,25 +383,83 @@
               "RelativeToolTip": "Hichain.Entity\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:22:27.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T10:22:27.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Hichain.Business\\Services\\ProductService.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\ProductService.cs",
+              "RelativeToolTip": "Hichain.Business\\Services\\ProductService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:25:14.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Hichain.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvyMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T13:13:24.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Hichain.WebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-07T03:38:12.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoggerHelper.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LoggerHelper.cs",
+              "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\LoggerHelper.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LoggerHelper.cs",
+              "RelativeToolTip": "Hichain.Common\\Utilities\\LoggerHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:25:55.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "nlog.config",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\nlog.config",
+              "RelativeDocumentMoniker": "Hichain.WebAPI\\nlog.config",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\nlog.config",
+              "RelativeToolTip": "Hichain.WebAPI\\nlog.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-05T13:55:59.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\Services\\IProductService.cs",
               "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IProductService.cs",
               "RelativeToolTip": "Hichain.Business\\Services\\IProductService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAABIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:22:06.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T10:22:06.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Data\\AppDbContext.cs",
@@ -164,49 +467,11 @@
               "RelativeToolTip": "Hichain.Entity\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T06:24:10.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T06:24:10.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Hichain.Business\\Services\\IUserService.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IUserService.cs",
-              "RelativeToolTip": "Hichain.Business\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:16:04.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Hichain.WebAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAvwFAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:14:51.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Hichain.WebAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T13:13:24.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 22,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\ProductsController.cs",

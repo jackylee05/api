@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using Hichain.Business.Services;
 using Hichain.Entity.Entities;
+using Hichain.Common.Models;
 
 namespace Hichain.WebAPI.Controllers;
 
@@ -25,18 +26,18 @@ public class AuthController : ControllerBase
     /// 用户登录
     /// </summary>
     [HttpPost("login")]
-    public async Task<ActionResult<AuthResponse>> Login([FromBody] LoginRequest request)
+    public async Task<ActionResult<ApiResponse<AuthResponse>>> Login([FromBody] LoginRequest request)
     {
         if (!ModelState.IsValid)
         {
-            return BadRequest(ModelState);
+            return BadRequest(ApiResponse<AuthResponse>.Fail(400, "请求参数无效"));
         }
 
         // 验证用户
         var user = await _userService.GetUserByUsernameAsync(request.Username);
         if (user == null || user.Password != request.Password) // 实际项目中应该加密密码
         {
-            return Unauthorized(new { Message = "用户名或密码错误" });
+            return Unauthorized(ApiResponse<AuthResponse>.Fail(401, "用户名或密码错误"));
         }
 
         // 生成 JWT 令牌
@@ -55,7 +56,7 @@ public class AuthController : ControllerBase
             }
         };
 
-        return Ok(response);
+        return Ok(ApiResponse<AuthResponse>.Ok(response, "登录成功"));
     }
 
     /// <summary>

@@ -16,3 +16,5 @@ D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\refint\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain.Business.pdb
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\ref\Hichain.Business.dll
+D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.DataAccess.dll
+D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.DataAccess.pdb

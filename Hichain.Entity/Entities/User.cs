@@ -1,10 +1,12 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hichain.Entity.Entities;
 
 /// <summary>
 /// 用户实体
 /// </summary>
+[Table("Users")]
 public class User : BaseEntity
 {
     /// <summary>

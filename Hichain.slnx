@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/00.Hichain.Data/">
+    <Project Path="Hichain.DataAccess/Hichain.DataAccess.csproj" />
+    <Project Path="SqlServerDatabaseEF/SqlServerDatabaseEF.csproj" Id="319632ad-51c4-494f-9086-08a4bb3b5113" />
+  </Folder>
+  <Folder Name="/00.Hichain.Data/EF/" />
   <Folder Name="/01.Hichain.Common/">
     <Project Path="Hichain.Common/Hichain.Common.csproj" />
   </Folder>

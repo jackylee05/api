@@ -1,6 +1,8 @@
 using System.Reflection;
 using Hichain.Business.Services;
 using Hichain.Common.Utilities;
+using Hichain.Common.Models;
+using Hichain.DataAccess;
 using Hichain.Entity.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -24,12 +26,30 @@ if (File.Exists(nlogConfigPath))
 {
     NLog.LogManager.Configuration = new XmlLoggingConfiguration(nlogConfigPath);
 }
-
 builder.Host.UseNLog();
 
 // 配置数据库连接
+// 将 SystemConfig 从配置绑定并赋值到 GlobalContext
+var _systemConfig = builder.Configuration.GetSection("SystemConfig").Get<SystemConfig>() ?? new SystemConfig();
+GlobalContext.SystemConfig = _systemConfig;
+GlobalContext.Configuration = builder.Configuration;
+GlobalContext.Services = builder.Services;
+
+// 绑定连接配置和插件配置到 GlobalContext
+var _connConfigs = builder.Configuration.GetSection("ConnConfigs").Get<List<ConnConfig>>() ?? new List<ConnConfig>();
+GlobalContext.ConnConfigs = _connConfigs;
+var _pluginConfigs = builder.Configuration.GetSection("PluginConfigs").Get<List<PluginConfig>>() ?? new List<PluginConfig>();
+GlobalContext.PluginConfigs = _pluginConfigs;
+
 var databaseType = builder.Configuration.GetValue<DatabaseType>("Database:Type", DatabaseType.SqlServer);
 var connectionString = GetConnectionString(builder.Configuration, databaseType);
+
+// 让 Business 在“用户名/密码读取”阶段可以使用你新增的 DataAccess/Dapper
+// 注意：Hichain.DataAccess/DbHelper 当前只实现了 SqlClient（SqlServer）
+if (databaseType == DatabaseType.SqlServer)
+{
+    builder.Services.AddSingleton<DbHelper>(_ => new DbHelper(connectionString));
+}
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -110,7 +130,6 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
-
 // 配置 CORS
 builder.Services.AddCors(options =>
 {
@@ -121,28 +140,27 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
-
 var app = builder.Build();
-
+// 添加全局异常处理中间件
+app.UseMiddleware<Hichain.WebAPI.Middleware.GlobalExceptionMiddleware>();
 // 确保即使框架日志较少，也能触发 NLog 写入文件
 NLog.LogManager.GetCurrentClassLogger().Info("Hichain.WebAPI starting up.");
-
-// 配置中间件
-if (app.Environment.IsDevelopment())
+// Swagger：默认与 Development 一致；可在 appsettings 中设 "Swagger": { "Enable": true } 强制开启（如发布后调试）
+var enableSwagger = app.Configuration.GetValue<bool?>("Swagger:Enable") ?? app.Environment.IsDevelopment();
+if (enableSwagger)
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Hichain.WebAPI v1");
+    });
 }
-
-// 统一走 HTTP 调试：不做 http -> https 重定向，避免 https://localhost:5003 出现 SSL 错误
-// （你只需要访问 http://localhost:5003/...）
+// 统一走 HTTP 调试：不做 http -> https 重定向；监听端口见 UseUrls（当前 5903）
 // app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 // 根路径给个简单提示，避免访问 `/` 直接 404
 app.MapGet("/", () => new
 {
@@ -155,9 +173,7 @@ app.MapGet("/", () => new
         "/swagger"
     }
 });
-
 app.Run();
-
 string GetConnectionString(IConfiguration configuration, DatabaseType databaseType)
 {
     // 直接从配置中获取连接字符串，不使用硬编码的默认值
@@ -167,11 +183,9 @@ string GetConnectionString(IConfiguration configuration, DatabaseType databaseTy
         DatabaseType.PostgreSQL => configuration["Database:PostgreSQL:ConnectionString"],
         _ => throw new NotSupportedException($"不支持的数据库类型: {databaseType}")
     };
-
     if (string.IsNullOrWhiteSpace(connectionString))
     {
         throw new InvalidOperationException($"数据库连接字符串未配置，请检查 appsettings.json 文件中的 Database:{databaseType}:ConnectionString 配置");
     }
-
     return connectionString;
 }

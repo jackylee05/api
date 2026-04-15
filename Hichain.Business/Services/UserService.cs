@@ -1,5 +1,7 @@
 using Hichain.Business.Services;
 using Hichain.Common.Utilities;
+using Hichain.DataAccess;
+using Hichain.DataAccess.Repository;
 using Hichain.Entity.Data;
 using Hichain.Entity.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +14,8 @@ namespace Hichain.Business.Services;
 public class UserService : IUserService
 {
     private readonly AppDbContext _dbContext;
+    private readonly DbHelper? _dbHelper;
+    private readonly Repository<User>? _userRepository;
 
     /// <summary>
     /// 构造函数
@@ -23,6 +27,15 @@ public class UserService : IUserService
     }
 
     /// <summary>
+    /// 构造函数（允许用 DataAccess/Dapper 查询用户，用于用户名/密码读取）
+    /// </summary>
+    public UserService(AppDbContext dbContext, DbHelper dbHelper) : this(dbContext)
+    {
+        _dbHelper = dbHelper;
+        _userRepository = new Repository<User>(dbHelper);
+    }
+
+    /// <summary>
     /// 获取所有用户
     /// </summary>
     /// <returns>用户列表</returns>
@@ -30,9 +43,16 @@ public class UserService : IUserService
     {
         try
         {
-            return await _dbContext.Users
-                .Where(u => !u.IsDeleted)
-                .ToListAsync();
+            if (_dbHelper is not null)
+            {
+                // 注意：EF 使用表名 Users（复数），因此这里也显式写 Users
+                const string sql = @"SELECT Id, Username, Password, Name, Email, Age, Role, CreatedAt, UpdatedAt, IsDeleted
+                                     FROM Users
+                                     WHERE IsDeleted = 0";
+                return await _dbHelper.QueryAsync<User>(sql);
+            }
+
+            return await _dbContext.Users.Where(u => !u.IsDeleted).ToListAsync();
         }
         catch (Exception ex)
         {
@@ -50,9 +70,15 @@ public class UserService : IUserService
     {
         try
         {
-            return await _dbContext.Users
-                .Where(u => u.Id == id && !u.IsDeleted)
-                .FirstOrDefaultAsync();
+            if (_dbHelper is not null)
+            {
+                const string sql = @"SELECT TOP 1 Id, Username, Password, Name, Email, Age, Role, CreatedAt, UpdatedAt, IsDeleted
+                                     FROM Users
+                                     WHERE Id = @Id AND IsDeleted = 0";
+                return await _dbHelper.QueryFirstAsync<User>(sql, new { Id = id });
+            }
+
+            return await _dbContext.Users.Where(u => u.Id == id && !u.IsDeleted).FirstOrDefaultAsync();
         }
         catch (Exception ex)
         {
@@ -70,6 +96,14 @@ public class UserService : IUserService
     {
         try
         {
+            if (_dbHelper is not null)
+            {
+                const string sql = @"SELECT TOP 1 Id, Username, Password, Name, Email, Age, Role, CreatedAt, UpdatedAt, IsDeleted
+                                     FROM Users
+                                     WHERE Username = @Username AND IsDeleted = 0";
+                return await _dbHelper.QueryFirstAsync<User>(sql, new { Username = username });
+            }
+
             return await _dbContext.Users
                 .Where(u => u.Username == username && !u.IsDeleted)
                 .FirstOrDefaultAsync();
@@ -92,10 +126,17 @@ public class UserService : IUserService
         {
             user.CreatedAt = DateTime.UtcNow;
             user.UpdatedAt = DateTime.UtcNow;
-            
+            user.IsDeleted = false;
+
+            if (_userRepository is not null)
+            {
+                user.Id = await _userRepository.Insert(user);
+                return user;
+            }
+
             _dbContext.Users.Add(user);
             await _dbContext.SaveChangesAsync();
-            
+
             return user;
         }
         catch (Exception ex)
@@ -115,10 +156,10 @@ public class UserService : IUserService
         try
         {
             user.UpdatedAt = DateTime.UtcNow;
-            
+
             _dbContext.Users.Update(user);
             await _dbContext.SaveChangesAsync();
-            
+
             return user;
         }
         catch (Exception ex)
@@ -145,10 +186,10 @@ public class UserService : IUserService
 
             user.IsDeleted = true;
             user.UpdatedAt = DateTime.UtcNow;
-            
+
             _dbContext.Users.Update(user);
             await _dbContext.SaveChangesAsync();
-            
+
             return true;
         }
         catch (Exception ex)

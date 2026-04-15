@@ -35,3 +35,13 @@
 2026-04-05 21:19:29.2769|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2026-04-05 21:19:29.2796|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
 2026-04-05 21:19:29.2796|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2026-04-05 22:03:59.7488|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-05 22:04:00.0954|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-05 22:04:01.3089|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-05 22:04:01.4774|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-05 22:04:01.4774|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-05 22:04:01.4774|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-05 22:12:45.0789|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/ - - - 
+2026-04-05 22:13:42.9091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 56 
+2026-04-05 22:16:58.1260|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger - - - 
+2026-04-05 22:18:31.0400|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/swagger - - - 
