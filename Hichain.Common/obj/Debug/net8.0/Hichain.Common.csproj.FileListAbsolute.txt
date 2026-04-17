@@ -1,12 +1,12 @@
+D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.deps.json
+D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.dll
+D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.pdb
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.csproj.AssemblyReference.cache
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.GeneratedMSBuildEditorConfig.editorconfig
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.AssemblyInfoInputs.cache
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.AssemblyInfo.cs
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.csproj.CoreCompileInputs.cache
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.sourcelink.json
-D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.deps.json
-D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.dll
-D:\test_trae\trae3\Hichain.Common\bin\Debug\net8.0\Hichain.Common.pdb
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.dll
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\refint\Hichain.Common.dll
 D:\test_trae\trae3\Hichain.Common\obj\Debug\net8.0\Hichain.Common.pdb
