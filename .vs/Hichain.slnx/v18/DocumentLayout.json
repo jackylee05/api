@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\test_trae\\trae3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\tableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\tableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|solutionrelative:hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\database\\sqlserverdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\database\\sqlserverdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\databaseextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\databaseextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\batchutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\batchutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\graphutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\iqueryablebatchextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\batchutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\batchutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\invalidbulkconfigexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\invalidbulkconfigexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\tableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\tableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\eflogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\eflogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|d:\\test_trae\\trae3\\sqlserverdatabaseef\\dbcontexts\\fastproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{319632AD-51C4-494F-9086-08A4BB3B5113}|SqlServerDatabaseEF\\SqlServerDatabaseEF.csproj|solutionrelative:sqlserverdatabaseef\\dbcontexts\\fastproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|solutionrelative:hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{985F078B-8ED0-1C21-F8F5-878DF8263DBC}|Hichain.DataAccess\\Hichain.DataAccess.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\hichain.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -182,11 +186,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "DatabaseExtension.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DatabaseExtension.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DatabaseExtension.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DatabaseExtension.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DatabaseExtension.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T07:16:18.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ActivitySources.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\ActivitySources.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\ActivitySources.cs",
@@ -195,19 +212,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T07:02:15.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SqlServerAdapter.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T09:29:45.191Z",
               "EditorCaption": ""
             },
             {
@@ -227,25 +231,8 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DbContextExtension.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAArwFoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:01:18.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "BulkConfig.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\BulkConfig.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\BulkConfig.cs",
@@ -258,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "DbContextBulkTransactionGraphUtil.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransactionGraphUtil.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransactionGraphUtil.cs",
@@ -271,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GraphUtil.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\GraphUtil.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\GraphUtil.cs",
@@ -284,46 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SqlServerDatabase.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAtwBMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T09:41:24.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IQueryableExtensions.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAwBgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T13:28:15.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IQueryableBatchExtensions.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvwgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T13:13:48.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "BatchUtil.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\BatchUtil.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\BatchUtil.cs",
@@ -336,163 +284,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InvalidBulkConfigException.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "SqlServerDatabase.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\Database\\SqlServerDatabase.cs",
+              "ViewState": "AgIAAPIBAAAAAAAAAAAtwAMCAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T09:47:26.755Z",
+              "WhenOpened": "2026-04-15T09:41:24.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DbContextBulkExtensions.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:16:30.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DbCommandCustomInterceptor.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T09:50:53.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SqlAdaptersMapping.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T09:20:29.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SqlQueryBuilder.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwDQAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T02:42:57.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EFLogger.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T10:03:57.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SqlServerDbContext.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAApwCoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T09:56:02.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SqlBulkOperation.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAASwBkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:31:54.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DbContextBulkTransaction.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:56:15.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TableInfo.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
-              "ViewState": "AgIAAPIBAAAAAAAAAAAhwAcCAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:37:09.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FastProperty.cs",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
-              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
-              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
-              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T00:50:56.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Hichain.DataAccess",
-              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
-              "RelativeDocumentMoniker": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
-              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
-              "RelativeToolTip": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-15T06:07:29.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 1,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\DbHelper.cs",
               "RelativeDocumentMoniker": "Hichain.DataAccess\\DbHelper.cs",
@@ -505,7 +310,219 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 0,
+              "Title": "TableInfo.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\TableInfo.cs",
+              "ViewState": "AgIAAPIBAAAAAAAAAAAhwAcCAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:37:09.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SqlServerAdapter.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlServerAdapter.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:29:45.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbContextExtension.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextExtension.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAArwFoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:01:18.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IQueryableExtensions.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\IQueryableExtensions.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwBgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T13:28:15.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IQueryableBatchExtensions.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\IQueryableBatchExtensions.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvwgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T13:13:48.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InvalidBulkConfigException.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\InvalidBulkConfigException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:47:26.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DbContextBulkExtensions.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:16:30.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DbCommandCustomInterceptor.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbCommandCustomInterceptor.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:50:53.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SqlAdaptersMapping.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlAdaptersMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T09:20:29.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SqlQueryBuilder.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlQueryBuilder.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwDQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T02:42:57.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EFLogger.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\EFLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T10:03:57.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SqlServerDbContext.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlServerDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAApwCoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:56:02.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SqlBulkOperation.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\SqlBulkOperation.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:31:54.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DbContextBulkTransaction.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\DbContextBulkTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:56:15.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FastProperty.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
+              "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
+              "RelativeToolTip": "SqlServerDatabaseEF\\DbContexts\\FastProperty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T00:50:56.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Hichain.DataAccess",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "RelativeToolTip": "Hichain.DataAccess\\Hichain.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-15T06:07:29.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Extension.Exception.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Exception.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Exception.cs",
@@ -518,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Extension.Convert.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Convert.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Convert.cs",
@@ -531,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "LogHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LogHelper.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\LogHelper.cs",
@@ -544,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Class1.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Class1.cs",
@@ -557,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "DatabaseType.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\DatabaseType.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Data\\DatabaseType.cs",
@@ -570,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Repository.cs",
               "RelativeDocumentMoniker": "Hichain.DataAccess\\Repository.cs",
@@ -583,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\Services\\UserService.cs",
@@ -596,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Program.cs",
@@ -609,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "ConfigurationHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\ConfigurationHelper.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\ConfigurationHelper.cs",
@@ -621,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\UsersController.cs",
@@ -634,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\appsettings.json",
@@ -647,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Entities\\Product.cs",
@@ -659,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\Services\\ProductService.cs",
@@ -671,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\AuthController.cs",
@@ -683,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Properties\\launchSettings.json",
@@ -695,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "LoggerHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\LoggerHelper.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\LoggerHelper.cs",
@@ -707,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "nlog.config",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\nlog.config",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\nlog.config",
@@ -719,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\Services\\IProductService.cs",
@@ -731,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Data\\AppDbContext.cs",
@@ -743,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\ProductsController.cs",
