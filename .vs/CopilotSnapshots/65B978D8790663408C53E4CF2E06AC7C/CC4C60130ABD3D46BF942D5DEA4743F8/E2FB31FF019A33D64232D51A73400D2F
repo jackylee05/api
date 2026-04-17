@@ -1,0 +1,231 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Hichain.Business.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using System.Data.Common;
+using System.Data;
+using System.Linq.Expressions;
+
+namespace Hichain.Business.SqlServerDatabaseEF
+{
+    public class SqlServerDatabase : IDatabase
+    {
+        public DbContext dbContext { get; set; }
+
+        public IDbContextTransaction dbContextTransaction { get; set; }
+
+        public Task<IDatabase> BeginTrans()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> CommitTrans()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Close()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> ExecuteByProc(string procName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> ExecuteByProc(string procName, DbParameter[] dbParameter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> ExecuteBySql(string strSql)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> ExecuteBySql(string strSql, params DbParameter[] dbParameter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Insert<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Insert<T>(IEnumerable<T> entities) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> InsertBulk<T>(IEnumerable<T> entities, BulkConfig bulkconfig) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>() where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(IEnumerable<T> entities) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(long id) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(long[] id) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Delete<T>(string propertyName, long propertyValue) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Update<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Update<T>(IEnumerable<T> entities) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> UpdateAllField<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> UpdatePortionField<T>(T entity, string[] pfields) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> Update<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<T> IQueryable<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T> FindEntity<T>(object KeyValue) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T> FindEntity<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> FindList<T>() where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> FindList<T>(Func<T, object> orderby) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> FindList<T>(Expression<Func<T, bool>> condition) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> FindList<T>(string strSql) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> FindList<T>(string strSql, DbParameter[] dbParameter) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, IEnumerable<T> list)> FindList<T>(string sort, bool isAsc, int pageSize, int pageIndex) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, IEnumerable<T> list)> FindList<T>(Expression<Func<T, bool>> condition, string sort, bool isAsc, int pageSize, int pageIndex) where T : class, new()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, IEnumerable<T>)> FindList<T>(string strSql, string sort, bool isAsc, int pageSize, int pageIndex) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, IEnumerable<T>)> FindList<T>(string strSql, DbParameter[] dbParameter, string sort, bool isAsc, int pageSize, int pageIndex) where T : class
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DataTable> FindTable(string strSql)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DataTable> FindTable(string strSql, DbParameter[] dbParameter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, DataTable)> FindTable(string strSql, string sort, bool isAsc, int pageSize, int pageIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<(int total, DataTable)> FindTable(string strSql, DbParameter[] dbParameter, string sort, bool isAsc, int pageSize, int pageIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<object> FindMaxSeq(string seqcol, string tablename, string strwhere)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<object> FindObject(string strSql)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<object> FindObject(string strSql, DbParameter[] dbParameter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<T> FindObject<T>(string strSql) where T : class
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

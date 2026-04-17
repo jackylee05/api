@@ -1,0 +1,364 @@
+2026-04-07 09:45:16.0595|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 09:45:16.2022|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 09:45:16.3196|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 09:45:16.3196|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 09:45:16.3196|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 09:45:16.3196|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 09:48:44.2982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://127.0.0.1:5903/swagger - - - 
+2026-04-07 09:48:44.4420|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://127.0.0.1:5903/swagger - 301 0 - 142.8815ms 
+2026-04-07 09:48:44.4420|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - - - 
+2026-04-07 09:48:44.6074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - 200 - text/html;charset=utf-8 157.8654ms 
+2026-04-07 11:33:23.8005|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - - - 
+2026-04-07 11:33:23.8005|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - 200 - text/html;charset=utf-8 2.6609ms 
+2026-04-07 11:33:35.8938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://127.0.0.1:5903/swagger - - - 
+2026-04-07 11:33:35.8938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://127.0.0.1:5903/swagger - 301 0 - 0.4458ms 
+2026-04-07 11:33:35.8938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - - - 
+2026-04-07 11:33:35.8938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://127.0.0.1:5903/swagger/index.html - 200 - text/html;charset=utf-8 0.6359ms 
+2026-04-07 11:33:56.5198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger - - - 
+2026-04-07 11:33:56.5198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger - 301 0 - 0.5855ms 
+2026-04-07 11:33:56.5198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/index.html - - - 
+2026-04-07 11:33:56.5198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/index.html - 200 - text/html;charset=utf-8 0.9020ms 
+2026-04-07 11:38:24.9762|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger - - - 
+2026-04-07 11:38:24.9762|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger - 301 0 - 1.2351ms 
+2026-04-07 11:38:24.9876|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/index.html - - - 
+2026-04-07 11:38:24.9876|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/index.html - 200 - text/html;charset=utf-8 2.4721ms 
+2026-04-07 11:38:25.0297|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui.css - - - 
+2026-04-07 11:38:25.0297|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-standalone-preset.js - - - 
+2026-04-07 11:38:25.0297|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-bundle.js - - - 
+2026-04-07 11:38:25.0773|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2026-04-07 11:38:25.0773|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2026-04-07 11:38:25.0773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui.css - 200 152034 text/css 50.8593ms 
+2026-04-07 11:38:25.0773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 37.9002ms 
+2026-04-07 11:38:25.0936|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2026-04-07 11:38:25.0936|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 51.3585ms 
+2026-04-07 11:38:25.4572|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/v1/swagger.json - - - 
+2026-04-07 11:38:25.4683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/favicon-32x32.png - - - 
+2026-04-07 11:38:25.4683|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2026-04-07 11:38:25.4683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/favicon-32x32.png - 200 628 image/png 1.2914ms 
+2026-04-07 11:38:25.9101|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 452.8522ms 
+2026-04-07 11:41:43.5544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger - application/json 54 
+2026-04-07 11:41:43.5544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger - 301 0 - 0.5197ms 
+2026-04-07 11:41:43.5621|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/index.html - - - 
+2026-04-07 11:41:43.5621|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/index.html - 200 - text/html;charset=utf-8 1.0865ms 
+2026-04-07 11:42:19.2549|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/auth/login - application/json 54 
+2026-04-07 11:42:19.2948|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported' 
+2026-04-07 11:42:19.2948|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported' 
+2026-04-07 11:42:19.2948|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/auth/login - 405 0 - 40.8348ms 
+2026-04-07 11:42:24.5011|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-07 11:42:24.5011|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 11:42:24.5285|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.WebAPI.Controllers.AuthResponse]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-07 11:42:25.1817|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2026-04-07 11:42:25.9494|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (73ms) [Parameters=[@__username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 AND [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 11:42:26.0325|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.WebAPI.Controllers.AuthResponse'. 
+2026-04-07 11:42:26.0325|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 1509.4603ms 
+2026-04-07 11:42:26.0444|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 11:42:26.0444|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 1549.3416ms 
+2026-04-07 14:37:51.1662|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 55 
+2026-04-07 14:37:51.1757|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 14:37:51.1757|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.WebAPI.Controllers.AuthResponse]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-07 14:37:51.2355|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 AND [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 14:37:51.2355|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2026-04-07 14:37:51.2355|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 62.5062ms 
+2026-04-07 14:37:51.2355|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 14:37:51.2355|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 401 - application/json;+charset=utf-8 75.5759ms 
+2026-04-07 16:35:01.5685|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-07 16:35:01.5685|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 16:35:01.5685|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.WebAPI.Controllers.AuthResponse]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-07 16:35:01.6826|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 AND [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:35:01.6870|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.WebAPI.Controllers.AuthResponse'. 
+2026-04-07 16:35:01.6870|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 115.8272ms 
+2026-04-07 16:35:01.6870|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 16:35:01.6870|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 119.7970ms 
+2026-04-07 16:37:20.3854|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:37:20.4758|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:37:20.4850|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:37:20.5212|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:37:20.5212|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:37:20.5430|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 57.8049ms 
+2026-04-07 16:37:20.5430|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:37:20.5430|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 158.0803ms 
+2026-04-07 16:38:00.7590|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-07 16:38:00.7590|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 16:38:00.7590|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.WebAPI.Controllers.AuthResponse]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-07 16:38:00.7694|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 AND [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:38:00.7694|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.WebAPI.Controllers.AuthResponse'. 
+2026-04-07 16:38:00.7694|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 11.4365ms 
+2026-04-07 16:38:00.7694|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-07 16:38:00.7694|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 12.4006ms 
+2026-04-07 16:38:30.0398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:38:30.0398|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:30.0398|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:38:30.0569|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:38:30.0569|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:38:30.0569|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 14.9422ms 
+2026-04-07 16:38:30.0593|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:30.0593|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 19.8715ms 
+2026-04-07 16:38:35.0043|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:38:35.0043|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:35.0043|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:38:35.0186|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:38:35.0186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:38:35.0186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 13.6832ms 
+2026-04-07 16:38:35.0186|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:35.0186|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 15.8611ms 
+2026-04-07 16:38:44.1580|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:38:44.1580|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:44.1580|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:38:44.1704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:38:44.1704|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:38:44.1704|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 11.4582ms 
+2026-04-07 16:38:44.1704|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:38:44.1704|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 13.8113ms 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:41:19.6231|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7.5084ms 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:41:19.6231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 9.2634ms 
+2026-04-07 16:41:23.6461|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:41:23.6461|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:41:23.6461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:41:23.6461|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:41:23.6461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:41:23.6540|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7.0662ms 
+2026-04-07 16:41:23.6540|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:41:23.6540|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 8.3303ms 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:42:33.0279|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7.865ms 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:42:33.0279|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 9.1980ms 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:44:47.2955|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7.8428ms 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:44:47.2955|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 9.0406ms 
+2026-04-07 16:45:13.5869|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:45:13.5869|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:13.5869|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:45:13.5982|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:45:13.5982|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:45:13.5982|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 10.5367ms 
+2026-04-07 16:45:13.5982|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:13.5982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 12.7972ms 
+2026-04-07 16:45:16.7461|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:45:16.7461|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:16.7461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:45:16.7553|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:45:16.7553|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:45:16.7553|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 9.2079ms 
+2026-04-07 16:45:16.7553|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:16.7553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 10.3369ms 
+2026-04-07 16:45:21.2139|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:45:21.2139|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:21.2139|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:45:21.2267|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:45:21.2267|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:45:21.2267|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 12.7788ms 
+2026-04-07 16:45:21.2267|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:21.2267|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 14.0308ms 
+2026-04-07 16:45:28.7239|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:45:28.7239|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:28.7239|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:45:28.7317|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:45:28.7317|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:45:28.7317|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7.5815ms 
+2026-04-07 16:45:28.7317|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:28.7317|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 8.5453ms 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:45:30.7958|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 11.0707ms 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:45:30.7958|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 12.3561ms 
+2026-04-07 16:46:21.4091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:46:21.4091|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:46:21.4091|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:46:21.4091|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:46:21.4197|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:46:21.4197|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 9.9438ms 
+2026-04-07 16:46:21.4197|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:46:21.4197|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 11.1772ms 
+2026-04-07 16:49:59.5386|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 16:50:00.0870|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 16:50:00.6223|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 16:50:00.8435|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 16:50:00.8700|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 16:50:00.8779|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 16:50:03.3421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:50:03.8659|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:50:03.9188|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:50:26.8452|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2026-04-07 16:50:27.8385|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:50:27.9376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:50:27.9731|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 24045.669ms 
+2026-04-07 16:50:27.9731|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:50:27.9980|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 24680.3909ms 
+2026-04-07 16:51:30.3467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:51:30.3622|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:51:30.3622|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:51:30.4583|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:51:30.4583|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:51:30.4583|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 97.26ms 
+2026-04-07 16:51:30.4583|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:51:30.4664|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 119.9938ms 
+2026-04-07 16:51:33.0704|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:51:33.0815|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:51:33.0815|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:51:33.2584|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:51:33.2630|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:51:33.2630|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 174.6638ms 
+2026-04-07 16:51:33.2630|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:51:33.2630|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 195.7906ms 
+2026-04-07 16:52:23.0300|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 16:52:23.6956|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 16:52:24.3034|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 16:52:24.5259|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 16:52:24.5259|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 16:52:24.5286|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 16:54:33.3399|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:54:34.1140|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-07 16:54:34.1657|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-07 16:54:34.2119|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 403 0 - 897.8238ms 
+2026-04-07 16:54:39.7471|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:54:39.7667|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-07 16:54:39.7667|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-07 16:54:39.7667|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 403 0 - 22.3701ms 
+2026-04-07 16:55:25.9983|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 16:55:27.8482|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 16:55:29.5589|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 16:55:29.8613|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 16:55:29.8921|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 16:55:29.9404|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 16:55:34.5493|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:55:35.1473|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Users) 
+2026-04-07 16:55:35.1602|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-07 16:55:35.1928|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 403 0 - 666.7411ms 
+2026-04-07 16:55:38.7510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:55:38.7975|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Users) 
+2026-04-07 16:55:38.7975|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-07 16:55:38.8128|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 403 0 - 62.5551ms 
+2026-04-07 16:57:38.3484|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 16:57:39.0173|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 16:57:39.6853|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 16:57:39.8347|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 16:57:39.8440|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 16:57:39.8440|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 16:57:51.5818|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:57:51.8945|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:57:51.9207|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:57:57.4353|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2026-04-07 16:57:59.4469|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:57:59.6388|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:57:59.7046|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 7769.7986ms 
+2026-04-07 16:57:59.7046|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:57:59.7842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 8211.4098ms 
+2026-04-07 16:58:45.6534|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-07 16:58:46.2827|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-07 16:58:47.0211|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-07 16:58:47.2275|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-07 16:58:47.2275|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-07 16:58:47.2275|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-07 16:59:02.2449|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 16:59:02.5308|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:59:02.5619|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 16:59:09.0378|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2026-04-07 16:59:10.9911|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (77ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 16:59:11.1962|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 16:59:11.2705|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 8696.1461ms 
+2026-04-07 16:59:11.2705|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 16:59:11.3064|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 9073.4332ms 
+2026-04-07 17:01:35.6216|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - - - 
+2026-04-07 17:01:35.6216|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 17:01:35.6216|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hichain.Entity.Entities.User]]] GetAll() on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-07 17:01:40.1611|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[CreatedAt], [u].[Email], [u].[IsDeleted], [u].[Name], [u].[Password], [u].[Role], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDeleted] = CAST(0 AS bit) 
+2026-04-07 17:01:40.1765|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-07 17:01:40.1765|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI) in 4551.8942ms 
+2026-04-07 17:01:40.1868|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.GetAll (Hichain.WebAPI)' 
+2026-04-07 17:01:40.1868|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 200 - application/json;+charset=utf-8 4575.9259ms 

@@ -1,0 +1,6 @@
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.csproj.AssemblyReference.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.GeneratedMSBuildEditorConfig.editorconfig
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.AssemblyInfoInputs.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.AssemblyInfo.cs
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.csproj.CoreCompileInputs.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\SqlServerDatabaseEF.sourcelink.json

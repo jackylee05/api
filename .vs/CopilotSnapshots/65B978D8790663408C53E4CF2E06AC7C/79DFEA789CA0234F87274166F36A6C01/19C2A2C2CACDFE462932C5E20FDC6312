@@ -1,0 +1,12 @@
+﻿using System.Data.Common;
+
+namespace Hichain.DataAccess
+{
+    public static class DbParameterExtension
+    {
+        public static DbParameter[] ToDbParameter(DbParameter[] parameters)
+        {
+            return parameters ?? new DbParameter[0];
+        }
+    }
+}
