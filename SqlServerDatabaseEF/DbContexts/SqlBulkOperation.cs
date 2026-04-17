@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace GP.Framework.DataAccess.Data
+namespace Hichain.SqlServerDatabaseEF.DbContexts
 {
     public enum OperationType
     {

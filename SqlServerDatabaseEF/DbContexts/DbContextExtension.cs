@@ -10,6 +10,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Storage;
+using System.Data.Common;
 using System;
 using System.Data;
 using System.Data.Common;
@@ -17,7 +19,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Hichain.Business.SqlServerDatabaseEF
+namespace Hichain.SqlServerDatabaseEF.DbContexts
 {
     /// <summary>
     /// Defines the <see cref="DbContextExtension" />.
@@ -69,10 +71,34 @@ namespace Hichain.Business.SqlServerDatabaseEF
                     strSql.Append("," + propertyValue[i]);
                 }
             }
-            strSql.Append(")");
-            return strSql.ToString().ToLower();
+
+        /// <summary>
+        /// Get underlying <see cref="DbConnection"/> for given DbContext, applying BulkConfig.UnderlyingConnection if provided.
+        /// </summary>
+        public static DbConnection GetUnderlyingConnection(this DbContext context, BulkConfig config)
+        {
+            var conn = context.Database.GetDbConnection();
+            if (config?.UnderlyingConnection != null)
+            {
+                return config.UnderlyingConnection(conn);
+            }
+            return conn;
         }
 
+        /// <summary>
+        /// Get underlying <see cref="DbTransaction"/> for given IDbContextTransaction, applying BulkConfig.UnderlyingTransaction if provided.
+        /// </summary>
+        public static DbTransaction GetUnderlyingTransaction(this IDbContextTransaction transaction, BulkConfig config)
+        {
+            if (transaction == null) return null;
+            var dbTran = transaction.GetDbTransaction();
+            if (config?.UnderlyingTransaction != null)
+            {
+                return config.UnderlyingTransaction(dbTran);
+            }
+            return dbTran;
+        }
+            
         /// <summary>
         /// 获取实体映射对象.
         /// </summary>

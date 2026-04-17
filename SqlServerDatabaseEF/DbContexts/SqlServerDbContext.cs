@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hichain.SqlServerDatabaseEF
+namespace Hichain.SqlServerDatabaseEF.DbContexts
 {
     public class SqlServerDbContext : DbContext, IDisposable
     {

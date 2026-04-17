@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Hichain.Business.SqlServerDatabaseEF
+namespace Hichain.SqlServerDatabaseEF.DbContexts
 {
     public static class DbContextBulkExtensions
     {

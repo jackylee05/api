@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hichain.Business.SqlServerDatabaseEF
+namespace Hichain.SqlServerDatabaseEF.DbContexts
 {
     /// <summary>
     /// EfLoggerProvider
