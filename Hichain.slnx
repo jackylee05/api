@@ -1,7 +1,8 @@
 <Solution>
   <Folder Name="/00.Hichain.Data/">
-    <Project Path="Hichain.DataAccess/Hichain.DataAccess.csproj" />
-    <Project Path="SqlServerDatabaseEF/SqlServerDatabaseEF.csproj" Id="319632ad-51c4-494f-9086-08a4bb3b5113" />
+    <Project Path="Hichain.DataAccess.Data.Repository/Hichain.DataAccess.Data.Repository.csproj" Id="c670d34c-4529-490a-8bf4-5437d848bf7c" />
+    <Project Path="Hichain.DataAccess/Hichain.DataAccess.Data.csproj" />
+    <Project Path="SqlServerDatabaseEF/Hichain.DataAccess.Data.EF.csproj" Id="319632ad-51c4-494f-9086-08a4bb3b5113" />
   </Folder>
   <Folder Name="/00.Hichain.Data/EF/" />
   <Folder Name="/01.Hichain.Common/">
@@ -12,6 +13,7 @@
   </Folder>
   <Folder Name="/03.Hichain.Business/">
     <Project Path="Hichain.Business/Hichain.Business.csproj" />
+    <Project Path="Hichain.Service/Hichain.Service.csproj" Id="15fbd206-f473-4ad3-a728-a654c68ddecf" />
   </Folder>
   <Folder Name="/06.Hichain.WebUI/">
     <Project Path="Hichain.WebAPI/Hichain.WebAPI.csproj" />

@@ -40,11 +40,14 @@
               "D:\\test_trae\\trae3\\Hichain.Common\\Hichain.Common.csproj": {
                 "projectPath": "D:\\test_trae\\trae3\\Hichain.Common\\Hichain.Common.csproj"
               },
-              "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj": {
-                "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj"
+              "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj"
               },
               "D:\\test_trae\\trae3\\Hichain.Entity\\Hichain.Entity.csproj": {
                 "projectPath": "D:\\test_trae\\trae3\\Hichain.Entity\\Hichain.Entity.csproj"
+              },
+              "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj"
               }
             }
           }
@@ -197,12 +200,98 @@
         }
       }
     },
-    "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj": {
+    "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Hichain.DataAccess.Data.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
-        "projectName": "Hichain.DataAccess",
-        "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.csproj",
+        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Hichain.DataAccess.Data.Repository.csproj",
+        "projectName": "Hichain.DataAccess.Data.Repository",
+        "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Hichain.DataAccess.Data.Repository.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://192.168.1.213:801/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\test_trae\\trae3\\Hichain.Common\\Hichain.Common.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.Common\\Hichain.Common.csproj"
+              },
+              "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj"
+              },
+              "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj",
+        "projectName": "Hichain.DataAccess.Data",
+        "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
         "outputPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
@@ -256,9 +345,21 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "NetTopologySuite.IO.SqlServerBytes": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -351,6 +452,164 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj",
+        "projectName": "Hichain.Service",
+        "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_trae\\trae3\\Hichain.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://192.168.1.213:801/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Hichain.DataAccess.Data.Repository.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Hichain.DataAccess.Data.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj",
+        "projectName": "Hichain.DataAccess.Data.EF",
+        "projectPath": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://192.168.1.213:801/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.DataAccess\\Hichain.DataAccess.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.6.0, )"
             }
           },
           "imports": [

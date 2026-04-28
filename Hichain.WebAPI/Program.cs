@@ -46,10 +46,10 @@ var connectionString = GetConnectionString(builder.Configuration, databaseType);
 
 // 让 Business 在“用户名/密码读取”阶段可以使用你新增的 DataAccess/Dapper
 // 注意：Hichain.DataAccess/DbHelper 当前只实现了 SqlClient（SqlServer）
-if (databaseType == DatabaseType.SqlServer)
-{
-    builder.Services.AddSingleton<DbHelper>(_ => new DbHelper(connectionString));
-}
+//if (databaseType == DatabaseType.SqlServer)
+//{
+//    builder.Services.AddSingleton<DbHelper>(_ => new DbHelper(connectionString));
+//}
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -83,15 +83,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 // 注册服务
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<IUserService, UserBLL>();
+//builder.Services.AddScoped<IProductService, ProductService>();
 // 注册解析后的 DatabaseType，使其可以被 DI 注入到 AppDbContext 的构造函数中
 // 使用非泛型重载以允许传递值类型（枚举）
 builder.Services.AddSingleton(typeof(DatabaseType), databaseType);
 
 // 添加控制器
 builder.Services.AddControllers();
-
 // 配置 Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>

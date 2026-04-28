@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Hichain.Business.Services;
 using System.Data.Common;
 using System.Data;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Hichain.SqlServerDatabaseEF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage;
 using Hichain.Common.Utilities;
-using Hichain.SqlServerDatabaseEF.DbContexts;
 
 
-namespace Hichain.SqlServerDatabaseEF.DbContexts
+namespace Hichain.DataAccess.Data.EF
 {
     public class SqlServerDatabase : IDatabase
     {
@@ -744,7 +741,10 @@ namespace Hichain.SqlServerDatabaseEF.DbContexts
         /// <returns>The <see cref="Task{T}"/>.</returns>
         public async Task<T> FindObject<T>(string strSql) where T : class
         {
-            var list = await dbContext.SqlQuery<T>(strSql);
+            // var list = await dbContext.SqlQuery<T>(strSql);
+            var list = await dbContext.Database
+     .SqlQueryRaw<T>(strSql)
+     .ToListAsync();
             return list.FirstOrDefault();
         }
     }

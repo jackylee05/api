@@ -1,11 +1,12 @@
+using Hichain.Business.Services;
+using Hichain.Business.UserBLL;
+using Hichain.Common.Models;
+using Hichain.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Hichain.Business.Services;
-using Hichain.Entity.Entities;
-using Hichain.Common.Models;
 
 namespace Hichain.WebAPI.Controllers;
 
@@ -14,12 +15,11 @@ namespace Hichain.WebAPI.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IConfiguration _configuration;
-    private readonly IUserService _userService;
+    private UserBLL _bll = new UserBLL();
 
-    public AuthController(IConfiguration configuration, IUserService userService)
+    public AuthController(IConfiguration configuration)
     {
         _configuration = configuration;
-        _userService = userService;
     }
 
     /// <summary>
@@ -34,7 +34,7 @@ public class AuthController : ControllerBase
         }
 
         // 验证用户
-        var user = await _userService.GetUserByUsernameAsync(request.Username);
+        var user = await _bll.GetUserByUsernameAsync(request.Username);
         if (user == null || user.Password != request.Password) // 实际项目中应该加密密码
         {
             return Unauthorized(ApiResponse<AuthResponse>.Fail(401, "用户名或密码错误"));
@@ -45,15 +45,7 @@ public class AuthController : ControllerBase
 
         var response = new AuthResponse
         {
-            Token = token,
-            User = new UserInfo
-            {
-                Id = user.Id,
-                Username = user.Username,
-                Email = user.Email,
-                Name = user.Name,
-                Role = user.Role
-            }
+            Token = token
         };
 
         return Ok(ApiResponse<AuthResponse>.Ok(response, "登录成功"));
@@ -102,7 +94,6 @@ public class LoginRequest
 public class AuthResponse
 {
     public string Token { get; set; } = string.Empty;
-    public UserInfo User { get; set; } = new();
 }
 
 /// <summary>

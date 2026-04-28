@@ -136,12 +136,10 @@ D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Syste
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Common.dll
-D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Entity.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Common.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Entity.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Business.pdb
-D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.pdb
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\Hichain.WebAPI.csproj.AssemblyReference.cache
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\Hichain.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
@@ -167,3 +165,14 @@ D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\refint\Hichain.WebAPI.dll
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\Hichain.WebAPI.pdb
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\Hichain.WebAPI.genruntimeconfig.cache
 D:\test_trae\trae3\Hichain.WebAPI\obj\Debug\net8.0\ref\Hichain.WebAPI.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\EntityFramework.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\NetTopologySuite.IO.SqlServerBytes.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Service.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.pdb
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.pdb
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.pdb
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Service.pdb

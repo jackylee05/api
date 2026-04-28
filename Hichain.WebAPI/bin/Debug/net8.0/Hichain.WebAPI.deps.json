@@ -10,7 +10,8 @@
         "dependencies": {
           "Hichain.Business": "1.0.0",
           "Hichain.Common": "1.0.0",
-          "Hichain.DataAccess": "1.0.0",
+          "Hichain.DataAccess.Data": "1.0.0",
+          "Hichain.DataAccess.Data.Repository": "1.0.0",
           "Hichain.Entity": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.8",
           "Microsoft.AspNetCore.OpenApi": "8.0.25",
@@ -54,6 +55,23 @@
           "lib/net7.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.35.13827"
+          }
+        }
+      },
+      "EntityFramework/6.5.1": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "runtime": {
+          "lib/netstandard2.1/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.500.124.31603"
+          },
+          "lib/netstandard2.1/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.500.124.31603"
           }
         }
       },
@@ -549,7 +567,7 @@
       },
       "Mono.TextTemplating/2.2.1": {
         "dependencies": {
-          "System.CodeDom": "4.4.0"
+          "System.CodeDom": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
@@ -561,6 +579,17 @@
       "NetTopologySuite/2.6.0": {
         "runtime": {
           "lib/netstandard2.1/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NetTopologySuite.IO.SqlServerBytes/2.1.0": {
+        "dependencies": {
+          "NetTopologySuite": "2.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
@@ -727,11 +756,11 @@
           }
         }
       },
-      "System.CodeDom/4.4.0": {
+      "System.CodeDom/6.0.0": {
         "runtime": {
-          "lib/netstandard2.0/System.CodeDom.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25519.3"
+          "lib/net6.0/System.CodeDom.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -945,8 +974,9 @@
       "Hichain.Business/1.0.0": {
         "dependencies": {
           "Hichain.Common": "1.0.0",
-          "Hichain.DataAccess": "1.0.0",
-          "Hichain.Entity": "1.0.0"
+          "Hichain.DataAccess.Data": "1.0.0",
+          "Hichain.Entity": "1.0.0",
+          "Hichain.Service": "1.0.0"
         },
         "runtime": {
           "Hichain.Business.dll": {
@@ -970,15 +1000,45 @@
           }
         }
       },
-      "Hichain.DataAccess/1.0.0": {
+      "Hichain.DataAccess.Data/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.35",
+          "EntityFramework": "6.5.1",
           "Hichain.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
+          "NetTopologySuite": "2.6.0",
+          "NetTopologySuite.IO.SqlServerBytes": "2.1.0",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "Hichain.DataAccess.dll": {
+          "Hichain.DataAccess.Data.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hichain.DataAccess.Data.EF/1.0.0": {
+        "dependencies": {
+          "Hichain.DataAccess.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "NetTopologySuite": "2.6.0"
+        },
+        "runtime": {
+          "Hichain.DataAccess.Data.EF.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hichain.DataAccess.Data.Repository/1.0.0": {
+        "dependencies": {
+          "Hichain.Common": "1.0.0",
+          "Hichain.DataAccess.Data": "1.0.0",
+          "Hichain.DataAccess.Data.EF": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.8"
+        },
+        "runtime": {
+          "Hichain.DataAccess.Data.Repository.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -993,6 +1053,17 @@
         },
         "runtime": {
           "Hichain.Entity.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Hichain.Service/1.0.0": {
+        "dependencies": {
+          "Hichain.DataAccess.Data.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Hichain.Service.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1026,6 +1097,13 @@
       "sha512": "sha512-YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
       "path": "dapper/2.1.35",
       "hashPath": "dapper.2.1.35.nupkg.sha512"
+    },
+    "EntityFramework/6.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sQRP2lWg1i3aAGWqdliAM8zrGx7LHMUk+9/MoxUjwfTZYGMXvZ2JYZTlyTm1PqDxvn3c9E3U76TWDON7Y5+CVA==",
+      "path": "entityframework/6.5.1",
+      "hashPath": "entityframework.6.5.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1230,6 +1308,13 @@
       "path": "nettopologysuite/2.6.0",
       "hashPath": "nettopologysuite.2.6.0.nupkg.sha512"
     },
+    "NetTopologySuite.IO.SqlServerBytes/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R4BcV19f2l6EjHSjh/EHwLhYQHrOov9vig1EW5oBm0iqlZOgaIJm5tBnlbFnYlvdYOPuf5p0Qtf8PCVwH77Wbg==",
+      "path": "nettopologysuite.io.sqlserverbytes/2.1.0",
+      "hashPath": "nettopologysuite.io.sqlserverbytes.2.1.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1349,12 +1434,12 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.6.2",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
     },
-    "System.CodeDom/4.4.0": {
+    "System.CodeDom/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
-      "path": "system.codedom/4.4.0",
-      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
     },
     "System.Composition/6.0.0": {
       "type": "package",
@@ -1471,12 +1556,27 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Hichain.DataAccess/1.0.0": {
+    "Hichain.DataAccess.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hichain.DataAccess.Data.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hichain.DataAccess.Data.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Hichain.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hichain.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

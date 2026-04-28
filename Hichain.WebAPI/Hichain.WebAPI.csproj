@@ -17,9 +17,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hichain.Common\Hichain.Common.csproj" />
+    <ProjectReference Include="..\Hichain.DataAccess.Data.Repository\Hichain.DataAccess.Data.Repository.csproj" />
     <ProjectReference Include="..\Hichain.Entity\Hichain.Entity.csproj" />
     <ProjectReference Include="..\Hichain.Business\Hichain.Business.csproj" />
-    <ProjectReference Include="..\Hichain.DataAccess\Hichain.DataAccess.csproj" />
+    <ProjectReference Include="..\Hichain.DataAccess\Hichain.DataAccess.Data.csproj" />
   </ItemGroup>
 
   <!-- 确保 nlog.config 复制到输出目录，这样运行目录下会有 LOG 日志 -->

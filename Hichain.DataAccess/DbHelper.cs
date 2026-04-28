@@ -11,25 +11,11 @@ using Hichain.Common.Utilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace Hichain.DataAccess;
+namespace Hichain.DataAccess.Data;
 
 public class DbHelper
 {
-    private readonly string _connectionString;
-
-    public DbHelper(string connectionString)
-    {
-        _connectionString = connectionString;
-    }
-
-    private IDbConnection CreateConnection()
-    {
-        return new SqlConnection(_connectionString);
-    }
-    /// <summary>
-    /// Gets or sets the DbType
-    /// 数据库类型.
-    /// </summary>
+    //private readonly string _connectionString;
     public static DatabaseType DbType { get; set; }
 
     /// <summary>
@@ -116,17 +102,19 @@ public class DbHelper
     /// <returns>.</returns>
     public async Task<IDataReader> ExecuteReadeAsync(CommandType cmdType, string strSql, params DbParameter[] dbParameter)
     {
-        try
         {
-            // Prepare and execute command (keep simple to avoid depending on EF Core internals)
-            PrepareCommand(dbConnection, dbCommand, dbTransaction, cmdType, strSql, dbParameter);
-            var reader = await dbCommand.ExecuteReaderAsync(CommandBehavior.CloseConnection);
-            return reader;
-        }
-        catch (Exception ex)
-        {
-            Close();
-            throw ex;
+            try
+            {
+                PrepareCommand(dbConnection, dbCommand, dbTransaction, cmdType, strSql, dbParameter);
+                // ❗不再调用 logger
+                var reader = await dbCommand.ExecuteReaderAsync(CommandBehavior.CloseConnection);
+                return reader;
+            }
+            catch (Exception)
+            {
+                Close();
+                throw;
+            }
         }
     }
 
@@ -187,109 +175,109 @@ public class DbHelper
             }
         }
     }
-    private static string GetTableName(Type type)
-    {
-        var attr = type.GetCustomAttribute<TableAttribute>(inherit: true);
-        return attr?.Name ?? type.Name;
-    }
+    //private static string GetTableName(Type type)
+    //{
+    //    var attr = type.GetCustomAttribute<TableAttribute>(inherit: true);
+    //    return attr?.Name ?? type.Name;
+    //}
 
     /// <summary>
     /// 生成 INSERT 列：默认跳过 int 类型且值为 0 的 Id（自增主键由数据库生成）。
     /// </summary>
-    private static IReadOnlyList<PropertyInfo> GetInsertProperties<T>(T entity) where T : class
-    {
-        return typeof(T)
-            .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-            .Where(p => p.CanRead && !ShouldSkipIdForInsert(entity, p))
-            .ToList();
-    }
+    //private static IReadOnlyList<PropertyInfo> GetInsertProperties<T>(T entity) where T : class
+    //{
+    //    return typeof(T)
+    //        .GetProperties(BindingFlags.Public | BindingFlags.Instance)
+    //        .Where(p => p.CanRead && !ShouldSkipIdForInsert(entity, p))
+    //        .ToList();
+    //}
 
-    private static bool ShouldSkipIdForInsert<T>(T entity, PropertyInfo p) where T : class
-    {
-        if (!string.Equals(p.Name, "Id", StringComparison.Ordinal))
-            return false;
-        if (p.PropertyType != typeof(int))
-            return false;
-        var v = (int)(p.GetValue(entity) ?? 0);
-        return v == 0;
-    }
+    //private static bool ShouldSkipIdForInsert<T>(T entity, PropertyInfo p) where T : class
+    //{
+    //    if (!string.Equals(p.Name, "Id", StringComparison.Ordinal))
+    //        return false;
+    //    if (p.PropertyType != typeof(int))
+    //        return false;
+    //    var v = (int)(p.GetValue(entity) ?? 0);
+    //    return v == 0;
+    //}
 
-    public async Task<int> ExecuteAsync(string sql, object? param = null)
-    {
-        using var conn = CreateConnection();
-        return await conn.ExecuteAsync(sql, param);
-    }
+    //public async Task<int> ExecuteAsync(string sql, object? param = null)
+    //{
+    //    using var conn = CreateConnection();
+    //    return await conn.ExecuteAsync(sql, param);
+    //}
 
-    public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object? param = null)
-    {
-        using var conn = CreateConnection();
-        return await conn.QueryAsync<T>(sql, param);
-    }
+    //public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object? param = null)
+    //{
+    //    using var conn = CreateConnection();
+    //    return await conn.QueryAsync<T>(sql, param);
+    //}
 
-    public async Task<T?> QueryFirstAsync<T>(string sql, object? param = null)
-    {
-        using var conn = CreateConnection();
-        return await conn.QueryFirstOrDefaultAsync<T>(sql, param);
-    }
+    //public async Task<T?> QueryFirstAsync<T>(string sql, object? param = null)
+    //{
+    //    using var conn = CreateConnection();
+    //    return await conn.QueryFirstOrDefaultAsync<T>(sql, param);
+    //}
 
     /// <summary>
     /// 按实体属性插入，表名优先取实体上的 [Table("...")]。
     /// </summary>
-    public async Task<int> InsertAsync<T>(T entity) where T : class
-    {
-        var props = GetInsertProperties(entity);
-        var table = GetTableName(typeof(T));
-        var columns = string.Join(",", props.Select(p => p.Name));
-        var values = string.Join(",", props.Select(p => "@" + p.Name));
-        var sql = $"INSERT INTO {table} ({columns}) VALUES ({values})";
-        return await ExecuteAsync(sql, entity);
-    }
+    //public async Task<int> InsertAsync<T>(T entity) where T : class
+    //{
+    //    var props = GetInsertProperties(entity);
+    //    var table = GetTableName(typeof(T));
+    //    var columns = string.Join(",", props.Select(p => p.Name));
+    //    var values = string.Join(",", props.Select(p => "@" + p.Name));
+    //    var sql = $"INSERT INTO {table} ({columns}) VALUES ({values})";
+    //    return await ExecuteAsync(sql, entity);
+    //}
 
     /// <summary>
     /// 插入并返回 SqlServer 自增 Id（OUTPUT INSERTED.Id）。
     /// </summary>
-    public async Task<int> InsertReturnIdentityAsync<T>(T entity) where T : class
-    {
-        var props = GetInsertProperties(entity);
-        var table = GetTableName(typeof(T));
-        var columns = string.Join(",", props.Select(p => p.Name));
-        var values = string.Join(",", props.Select(p => "@" + p.Name));
-        var sql = $"INSERT INTO {table} ({columns}) OUTPUT INSERTED.Id VALUES ({values})";
-        using var conn = CreateConnection();
-        return await conn.QuerySingleAsync<int>(sql, entity);
-    }
+    //public async Task<int> InsertReturnIdentityAsync<T>(T entity) where T : class
+    //{
+    //    var props = GetInsertProperties(entity);
+    //    var table = GetTableName(typeof(T));
+    //    var columns = string.Join(",", props.Select(p => p.Name));
+    //    var values = string.Join(",", props.Select(p => "@" + p.Name));
+    //    var sql = $"INSERT INTO {table} ({columns}) OUTPUT INSERTED.Id VALUES ({values})";
+    //    using var conn = CreateConnection();
+    //    return await conn.QuerySingleAsync<int>(sql, entity);
+    //}
 
-    public async Task<int> DeleteAsync<T>(object key)
-    {
-        var table = GetTableName(typeof(T));
-        var sql = $"DELETE FROM {table} WHERE Id=@Id";
-        return await ExecuteAsync(sql, new { Id = key });
-    }
+    //public async Task<int> DeleteAsync<T>(object key)
+    //{
+    //    var table = GetTableName(typeof(T));
+    //    var sql = $"DELETE FROM {table} WHERE Id=@Id";
+    //    return await ExecuteAsync(sql, new { Id = key });
+    //}
 
-    public async Task<T?> FindAsync<T>(object key) where T : class
-    {
-        var table = GetTableName(typeof(T));
-        var sql = $"SELECT * FROM {table} WHERE Id=@Id";
-        return await QueryFirstAsync<T>(sql, new { Id = key });
-    }
+    //public async Task<T?> FindAsync<T>(object key) where T : class
+    //{
+    //    var table = GetTableName(typeof(T));
+    //    var sql = $"SELECT * FROM {table} WHERE Id=@Id";
+    //    return await QueryFirstAsync<T>(sql, new { Id = key });
+    //}
 
-    public async Task<int> InsertBulkAsync<T>(IEnumerable<T> list) where T : class
-    {
-        var count = 0;
-        foreach (var item in list)
-        {
-            count += await InsertAsync(item);
-        }
-        return count;
-    }
+    //public async Task<int> InsertBulkAsync<T>(IEnumerable<T> list) where T : class
+    //{
+    //    var count = 0;
+    //    foreach (var item in list)
+    //    {
+    //        count += await InsertAsync(item);
+    //    }
+    //    return count;
+    //}
 
-    public async Task<int> UpdatePartialAsync<T>(object key, Dictionary<string, object> fields)
-    {
-        var table = GetTableName(typeof(T));
-        var setClause = string.Join(",", fields.Keys.Select(k => $"{k}=@{k}"));
-        var sql = $"UPDATE {table} SET {setClause} WHERE Id=@Id";
-        var param = new DynamicParameters(fields);
-        param.Add("Id", key);
-        return await ExecuteAsync(sql, param);
-    }
+    //public async Task<int> UpdatePartialAsync<T>(object key, Dictionary<string, object> fields)
+    //{
+    //    var table = GetTableName(typeof(T));
+    //    var setClause = string.Join(",", fields.Keys.Select(k => $"{k}=@{k}"));
+    //    var sql = $"UPDATE {table} SET {setClause} WHERE Id=@Id";
+    //    var param = new DynamicParameters(fields);
+    //    param.Add("Id", key);
+    //    return await ExecuteAsync(sql, param);
+    //}
 }

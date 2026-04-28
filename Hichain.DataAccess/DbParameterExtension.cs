@@ -1,7 +1,7 @@
 using System.Data.Common;
 using System.Linq;
 
-namespace Hichain.DataAccess
+namespace Hichain.DataAccess.Data
 {
     public static class DbParameterExtension
     {
