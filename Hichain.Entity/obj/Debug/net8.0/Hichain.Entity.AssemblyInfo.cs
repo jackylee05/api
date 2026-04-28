@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hichain.Entity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c9d81406b81be054bca0edc67f5b7855efa9b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda679eee3061646ab8f03b0517164f7c6007700")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hichain.Entity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hichain.Entity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

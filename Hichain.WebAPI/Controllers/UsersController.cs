@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using Hichain.Business.Services;
+using Hichain.Services;
 using Hichain.Entity.Entities;
 using Hichain.Common.Models;
-using Hichain.Business.UserBLL;
+using Hichain.Business;
 
 namespace Hichain.WebAPI.Controllers;
 

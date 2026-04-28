@@ -576,6 +576,14 @@
           }
         }
       },
+      "MySqlConnector/2.3.5": {
+        "runtime": {
+          "lib/net8.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.5.0"
+          }
+        }
+      },
       "NetTopologySuite/2.6.0": {
         "runtime": {
           "lib/netstandard2.1/NetTopologySuite.dll": {
@@ -652,6 +660,18 @@
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "8.0.4.0",
             "fileVersion": "8.0.4.0"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/8.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.8",
+          "MySqlConnector": "2.3.5"
+        },
+        "runtime": {
+          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -984,7 +1004,7 @@
           "Hichain.Common": "1.0.0",
           "Hichain.DataAccess.Data": "1.0.0",
           "Hichain.Entity": "1.0.0",
-          "Hichain.Service": "1.0.0"
+          "Hichain.Services": "1.0.0"
         },
         "runtime": {
           "Hichain.Business.dll": {
@@ -1030,7 +1050,8 @@
         "dependencies": {
           "Hichain.DataAccess.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
-          "NetTopologySuite": "2.6.0"
+          "NetTopologySuite": "2.6.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.1"
         },
         "runtime": {
           "Hichain.DataAccess.Data.EF.dll": {
@@ -1067,12 +1088,12 @@
           }
         }
       },
-      "Hichain.Service/1.0.0": {
+      "Hichain.Services/1.0.0": {
         "dependencies": {
           "Hichain.DataAccess.Data.Repository": "1.0.0"
         },
         "runtime": {
-          "Hichain.Service.dll": {
+          "Hichain.Services.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1310,6 +1331,13 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
+    "MySqlConnector/2.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
+      "path": "mysqlconnector/2.3.5",
+      "hashPath": "mysqlconnector.2.3.5.nupkg.sha512"
+    },
     "NetTopologySuite/2.6.0": {
       "type": "package",
       "serviceable": true,
@@ -1365,6 +1393,13 @@
       "sha512": "sha512-/hHd9MqTRVDgIpsToCcxMDxZqla0HAQACiITkq1+L9J2hmHKV6lBAPlauF+dlNSfHpus7rrljWx4nAanKD6qAw==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-szwVNxovhjdIlX1zx0tkEwVrR2hGRFqNVm77bqU8ZPdUNIk2NoxaHY5skZyPnrtUb+5Kp6+NhbUraQ7oOmyOpA==",
+      "path": "pomelo.entityframeworkcore.mysql/8.0.1",
+      "hashPath": "pomelo.entityframeworkcore.mysql.8.0.1.nupkg.sha512"
     },
     "RestSharp/114.0.0": {
       "type": "package",
@@ -1592,7 +1627,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Hichain.Service/1.0.0": {
+    "Hichain.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

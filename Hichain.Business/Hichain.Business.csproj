@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\IUserService.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
@@ -18,7 +14,7 @@
     <ProjectReference Include="..\Hichain.Common\Hichain.Common.csproj" />
     <ProjectReference Include="..\Hichain.Entity\Hichain.Entity.csproj" />
     <ProjectReference Include="..\Hichain.DataAccess\Hichain.DataAccess.Data.csproj" />
-    <ProjectReference Include="..\Hichain.Service\Hichain.Service.csproj" />
+    <ProjectReference Include="..\Hichain.Service\Hichain.Services.csproj" />
   </ItemGroup>
 
 </Project>

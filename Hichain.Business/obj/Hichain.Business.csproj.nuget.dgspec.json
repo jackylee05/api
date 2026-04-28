@@ -46,8 +46,8 @@
               "D:\\test_trae\\trae3\\Hichain.Entity\\Hichain.Entity.csproj": {
                 "projectPath": "D:\\test_trae\\trae3\\Hichain.Entity\\Hichain.Entity.csproj"
               },
-              "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj": {
-                "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj"
+              "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Services.csproj": {
+                "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Services.csproj"
               }
             }
           }
@@ -478,12 +478,12 @@
         }
       }
     },
-    "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj": {
+    "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj",
-        "projectName": "Hichain.Service",
-        "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Service.csproj",
+        "projectUniqueName": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Services.csproj",
+        "projectName": "Hichain.Services",
+        "projectPath": "D:\\test_trae\\trae3\\Hichain.Service\\Hichain.Services.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
         "outputPath": "D:\\test_trae\\trae3\\Hichain.Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -614,6 +614,10 @@
             "NetTopologySuite": {
               "target": "Package",
               "version": "[2.6.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [

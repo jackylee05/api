@@ -171,9 +171,11 @@ D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\NetTopologySuite.IO.SqlServer
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.dll
-D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Service.dll
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.pdb
-D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Service.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\RestSharp.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\MySqlConnector.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Services.dll
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Services.pdb

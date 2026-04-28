@@ -18,10 +18,6 @@ public class AppDbContext : DbContext
     /// </summary>
     public DbSet<User> Users { get; set; }
 
-    /// <summary>
-    /// 产品表
-    /// </summary>
-    public DbSet<Product> Products { get; set; }
 
     /// <summary>
     /// 构造函数
@@ -44,7 +40,6 @@ public class AppDbContext : DbContext
 
         // 配置表名
         modelBuilder.Entity<User>().ToTable("Users");
-        modelBuilder.Entity<Product>().ToTable("Products");
 
         // 种子数据
         SeedData(modelBuilder);
@@ -80,34 +75,6 @@ public class AppDbContext : DbContext
                 Email = "user@example.com",
                 Age = 25,
                 Role = "User",
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-                IsDeleted = false
-            }
-        );
-
-        // 种子产品数据
-        modelBuilder.Entity<Product>().HasData(
-            new Product
-            {
-                Id = 1,
-                Name = "笔记本电脑",
-                Description = "高性能办公笔记本",
-                Price = 5999.00m,
-                Stock = 100,
-                Category = "电子产品",
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-                IsDeleted = false
-            },
-            new Product
-            {
-                Id = 2,
-                Name = "无线鼠标",
-                Description = "人体工学设计",
-                Price = 99.00m,
-                Stock = 500,
-                Category = "电子产品",
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow,
                 IsDeleted = false

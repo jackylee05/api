@@ -1,5 +1,5 @@
-using Hichain.Business.Services;
-using Hichain.Business.UserBLL;
+using Hichain.Business;
+using Hichain.Services;
 using Hichain.Common.Models;
 using Hichain.Entity.Entities;
 using Microsoft.AspNetCore.Mvc;

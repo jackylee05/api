@@ -1,5 +1,4 @@
 using System.Reflection;
-using Hichain.Business.Services;
 using Hichain.Common.Utilities;
 using Hichain.Common.Models;
 using Hichain.DataAccess;
@@ -41,8 +40,8 @@ GlobalContext.ConnConfigs = _connConfigs;
 var _pluginConfigs = builder.Configuration.GetSection("PluginConfigs").Get<List<PluginConfig>>() ?? new List<PluginConfig>();
 GlobalContext.PluginConfigs = _pluginConfigs;
 
-var databaseType = builder.Configuration.GetValue<DatabaseType>("Database:Type", DatabaseType.SqlServer);
-var connectionString = GetConnectionString(builder.Configuration, databaseType);
+//var databaseType = builder.Configuration.GetValue<DatabaseType>("Database:Type", DatabaseType.SqlServer);
+//var connectionString = GetConnectionString(builder.Configuration, databaseType);
 
 // 让 Business 在“用户名/密码读取”阶段可以使用你新增的 DataAccess/Dapper
 // 注意：Hichain.DataAccess/DbHelper 当前只实现了 SqlClient（SqlServer）
@@ -51,18 +50,18 @@ var connectionString = GetConnectionString(builder.Configuration, databaseType);
 //    builder.Services.AddSingleton<DbHelper>(_ => new DbHelper(connectionString));
 //}
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    switch (databaseType)
-    {
-        case DatabaseType.SqlServer:
-            options.UseSqlServer(connectionString);
-            break;
-        case DatabaseType.PostgreSQL:
-            options.UseNpgsql(connectionString);
-            break;
-    }
-});
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//{
+//    switch (databaseType)
+//    {
+//        case DatabaseType.SqlServer:
+//            options.UseSqlServer(connectionString);
+//            break;
+//        case DatabaseType.PostgreSQL:
+//            options.UseNpgsql(connectionString);
+//            break;
+//    }
+//});
 
 // 配置 JWT 认证
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -87,7 +86,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 //builder.Services.AddScoped<IProductService, ProductService>();
 // 注册解析后的 DatabaseType，使其可以被 DI 注入到 AppDbContext 的构造函数中
 // 使用非泛型重载以允许传递值类型（枚举）
-builder.Services.AddSingleton(typeof(DatabaseType), databaseType);
+//builder.Services.AddSingleton(typeof(DatabaseType), databaseType);
 
 // 添加控制器
 builder.Services.AddControllers();
@@ -168,23 +167,22 @@ app.MapGet("/", () => new
     {
         "/api/auth/login",
         "/api/users",
-        "/api/products",
         "/swagger"
     }
 });
 app.Run();
-string GetConnectionString(IConfiguration configuration, DatabaseType databaseType)
-{
-    // 直接从配置中获取连接字符串，不使用硬编码的默认值
-    var connectionString = databaseType switch
-    {
-        DatabaseType.SqlServer => configuration["Database:SqlServer:ConnectionString"],
-        DatabaseType.PostgreSQL => configuration["Database:PostgreSQL:ConnectionString"],
-        _ => throw new NotSupportedException($"不支持的数据库类型: {databaseType}")
-    };
-    if (string.IsNullOrWhiteSpace(connectionString))
-    {
-        throw new InvalidOperationException($"数据库连接字符串未配置，请检查 appsettings.json 文件中的 Database:{databaseType}:ConnectionString 配置");
-    }
-    return connectionString;
-}
+//string GetConnectionString(IConfiguration configuration, DatabaseType databaseType)
+//{
+//    // 直接从配置中获取连接字符串，不使用硬编码的默认值
+//    var connectionString = databaseType switch
+//    {
+//        DatabaseType.SqlServer => configuration["Database:SqlServer:ConnectionString"],
+//        DatabaseType.PostgreSQL => configuration["Database:PostgreSQL:ConnectionString"],
+//        _ => throw new NotSupportedException($"不支持的数据库类型: {databaseType}")
+//    };
+//    if (string.IsNullOrWhiteSpace(connectionString))
+//    {
+//        throw new InvalidOperationException($"数据库连接字符串未配置，请检查 appsettings.json 文件中的 Database:{databaseType}:ConnectionString 配置");
+//    }
+//    return connectionString;
+//}
