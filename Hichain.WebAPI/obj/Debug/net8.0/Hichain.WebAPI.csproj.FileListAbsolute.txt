@@ -176,3 +176,4 @@ D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.Repos
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.pdb
 D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\Hichain.Service.pdb
+D:\test_trae\trae3\Hichain.WebAPI\bin\Debug\net8.0\RestSharp.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vHiCfG6fJ6A=",
+  "dgSpecHash": "f0/DvSRE1E4=",
   "success": true,
   "projectFilePath": "D:\\test_trae\\trae3\\Hichain.Entity\\Hichain.Entity.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\restsharp\\114.0.0\\restsharp.114.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.sinks.console\\4.0.0\\serilog.sinks.console.4.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\serilog.sinks.file\\4.0.0\\serilog.sinks.file.4.0.0.nupkg.sha512",
