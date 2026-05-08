@@ -1,11 +1,8 @@
 using GLSCM.Common.Util;
 using Hichain.Services;
 using Hichain.Common.Utilities;
-using Hichain.DataAccess;
 using Hichain.Entity.Data;
 using Hichain.Entity.Entities;
-using Microsoft.EntityFrameworkCore;
-using static Dapper.SqlMapper;
 namespace Hichain.Business;
 /// <summary>
 /// 用户服务实现
@@ -32,7 +29,7 @@ public class UserBLL
         }
         catch (Exception ex)
         {
-            LoggerHelper.Error(ex, "根据用户名获取用户失败: {0}", username);
+            LogHelper.Error("根据用户名获取用户失败: " + username, ex);
             throw;
         }
     }
@@ -50,7 +47,7 @@ public class UserBLL
         {
             WeixinConfig wcfg = new WeixinConfig();
             WeixinPushHelp.SendToMessage(wcfg, "创建用户报错："+ex.Message);
-            LoggerHelper.Error(ex, "创建用户失败");
+            LogHelper.Error("创建用户失败", ex);
             throw;
         }
     }
