@@ -1,0 +1,77 @@
+{
+  "// 创建入库单接口示例": "POST /api/Inbound/Create",
+  "// 请求示例": {
+    "inboundOrderNO": "IN202604300001",
+    "autoCodeRuleCode": "AUTO001",
+    "inboundType": 1,
+    "receiveType": 1,
+    "priority": 1,
+    "receiveState": 0,
+    "putawayState": 0,
+    "customerID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "warehouseID": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+    "expInboundDate": "2026-04-30T10:00:00",
+    "orderNO": "ORDER001",
+    "isFeedback": 0,
+    "settlementState": 0,
+    "remark": "测试入库单",
+    "createBy": "admin",
+    "inboundParts": [
+      {
+        "seqNO": 1,
+        "partNO": "PART001",
+        "partDesc": "零件描述1",
+        "expEAQty": 100.00,
+        "expPkgsQty": 10,
+        "unitPrice": 50.00,
+        "amount": 5000.00,
+        "currencyCode": "CNY",
+        "putawayRuleID": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+        "isSNControl": 0,
+        "isSettlementEnd": 0,
+        "isAPSettlementEnd": 0,
+        "createBy": "admin",
+        "remark": "明细备注1"
+      },
+      {
+        "seqNO": 2,
+        "partNO": "PART002",
+        "partDesc": "零件描述2",
+        "expEAQty": 200.00,
+        "expPkgsQty": 20,
+        "unitPrice": 30.00,
+        "amount": 6000.00,
+        "currencyCode": "CNY",
+        "putawayRuleID": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+        "isSNControl": 0,
+        "isSettlementEnd": 0,
+        "isAPSettlementEnd": 0,
+        "createBy": "admin",
+        "remark": "明细备注2"
+      }
+    ]
+  },
+  "// 响应示例": {
+    "success": true,
+    "message": "入库单创建成功",
+    "data": {
+      "inboundID": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+      "inboundOrderNO": "IN202604300001",
+      "createDate": "2026-04-30T10:30:00",
+      "inboundParts": [
+        {
+          "inboundPartID": "3fa85f64-5717-4562-b3fc-2c963f66afaa",
+          "inboundID": "3fa85f64-5717-4562-b3fc-2c963f66afa9",
+          "seqNO": 1,
+          "partNO": "PART001"
+        }
+      ]
+    }
+  },
+  "// 其他接口": {
+    "根据ID查询": "GET /api/Inbound/GetById?inboundId=3fa85f64-5717-4562-b3fc-2c963f66afa9",
+    "根据单号查询": "GET /api/Inbound/GetByOrderNo?inboundOrderNo=IN202604300001",
+    "更新入库单": "PUT /api/Inbound/Update (请求体同创建接口，需包含inboundID)",
+    "删除入库单": "DELETE /api/Inbound/Delete?inboundId=3fa85f64-5717-4562-b3fc-2c963f66afa9"
+  }
+}

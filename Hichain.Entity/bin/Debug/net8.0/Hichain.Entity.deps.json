@@ -307,36 +307,6 @@
           }
         }
       },
-      "Serilog/4.0.0": {
-        "runtime": {
-          "lib/net8.0/Serilog.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
-      "Serilog.Sinks.Console/4.0.0": {
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "runtime": {
-          "lib/net5.0/Serilog.Sinks.Console.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
-      "Serilog.Sinks.File/4.0.0": {
-        "dependencies": {
-          "Serilog": "4.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Serilog.Sinks.File.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.0.0.0"
-          }
-        }
-      },
       "System.Configuration.ConfigurationManager/6.0.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -463,10 +433,7 @@
         "dependencies": {
           "NLog": "5.2.0",
           "Newtonsoft.Json": "13.0.3",
-          "RestSharp": "114.0.0",
-          "Serilog": "4.0.0",
-          "Serilog.Sinks.Console": "4.0.0",
-          "Serilog.Sinks.File": "4.0.0"
+          "RestSharp": "114.0.0"
         },
         "runtime": {
           "Hichain.Common.dll": {
@@ -650,27 +617,6 @@
       "sha512": "sha512-8pDO4q+K8nIqXbvGCb9ciKcngj36pCXGRDzOYPEPoS2IvBIL+mejmUMAtSNALt/NkDc9LQmHvM95kdniLSbGtg==",
       "path": "restsharp/114.0.0",
       "hashPath": "restsharp.114.0.0.nupkg.sha512"
-    },
-    "Serilog/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw==",
-      "path": "serilog/4.0.0",
-      "hashPath": "serilog.4.0.0.nupkg.sha512"
-    },
-    "Serilog.Sinks.Console/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yJQit9sTJ4xGLKgCujqDJsaGqBNJwGB/H898z+xYlMG06twy4//6LLnSrsmpduZxcHIG4im7cv+JmXLzXz2EkQ==",
-      "path": "serilog.sinks.console/4.0.0",
-      "hashPath": "serilog.sinks.console.4.0.0.nupkg.sha512"
-    },
-    "Serilog.Sinks.File/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vBj43RkAbeP1dzoPFR2+LfV5GevDRPDq6265JJBv223lMvT9rfdwe/S/I9ow7aZSLYKfw4qPDw6NW8YwjbDbvg==",
-      "path": "serilog.sinks.file/4.0.0",
-      "hashPath": "serilog.sinks.file.4.0.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/6.0.1": {
       "type": "package",

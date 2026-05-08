@@ -1,97 +1,48 @@
-﻿using System;
+using System;
 using System.Data;
+using Microsoft.Data.SqlClient;
 
 namespace Hichain.DataAccess.Data
 {
     /// <summary>
-    /// Provides helper functionality to support both System.Data.SqlClient
-    /// and Microsoft.Data.SqlClient
+    /// Provides helper functionality for Microsoft.Data.SqlClient
     /// </summary>
     public static class SqlClientHelper
     {
-        /// <summary>
-        /// Creates a parameter with the right type for the connection
-        /// </summary>
-        /// <param name="connection"></param>
-        /// <returns></returns>
         public static IDbDataParameter CreateParameter(IDbConnection connection)
         {
-            var parameterType = GetParameterType(connection);
-            return (IDbDataParameter)Activator.CreateInstance(parameterType);
+            return new SqlParameter();
         }
 
-        /// <summary>
-        /// Gets the type of parameter supported by the connection
-        /// </summary>
-        /// <param name="connection"></param>
-        /// <returns></returns>
         public static Type GetParameterType(IDbConnection connection)
         {
-            if (IsSystemConnection(connection))
-            {
-                return typeof(System.Data.SqlClient.SqlParameter);
-            }
-            else
-            {
-                return typeof(Microsoft.Data.SqlClient.SqlParameter);
-            }
+            return typeof(SqlParameter);
         }
 
-        /// <summary>
-        /// As long as <paramref name="parameter"/> is the correct type for
-        /// <paramref name="connection"/>, the original <paramref name="parameter"/>
-        /// will be returned; otherwise, a new parameter will be returned with the 
-        /// name and value copied from <paramref name="parameter"/>.  Note, only name
-        /// and value are copied, so if you have set other properties, this method
-        /// will ignore those.
-        /// </summary>
-        /// <param name="connection"></param>
-        /// <param name="parameter"></param>
-        /// <returns></returns>
         public static IDbDataParameter CorrectParameterType(IDbConnection connection, IDbDataParameter parameter)
         {
-            var correctParameterType = GetParameterType(connection);
-            if (parameter.GetType() == correctParameterType)
+            if (parameter is SqlParameter)
             {
-                // since type already matches, return original
                 return parameter;
             }
 
-            // create a new parameter of the correct type
-            var newParameter = CreateParameter(connection);
-
-            // copy properties from original parameter to copy
-            newParameter.ParameterName = parameter.ParameterName;
-            newParameter.Value = parameter.Value;
-            newParameter.DbType = parameter.DbType;
-
-            if (parameter is Microsoft.Data.SqlClient.SqlParameter microsoftSqlParameter
-                && newParameter is System.Data.SqlClient.SqlParameter newSystemSqlParameter)
+            var newParameter = new SqlParameter
             {
-                newSystemSqlParameter.SqlDbType = microsoftSqlParameter.SqlDbType;
-            }
-            else if(parameter is System.Data.SqlClient.SqlParameter systemSqlParameter
-                && newParameter is Microsoft.Data.SqlClient.SqlParameter newMicrosoftSqlParameter)
+                ParameterName = parameter.ParameterName,
+                Value = parameter.Value,
+                DbType = parameter.DbType
+            };
+
+            if (parameter is Microsoft.Data.SqlClient.SqlParameter microsoftSqlParameter)
             {
-                newMicrosoftSqlParameter.SqlDbType = systemSqlParameter.SqlDbType;
+                newParameter.SqlDbType = microsoftSqlParameter.SqlDbType;
             }
 
             return newParameter;
         }
 
-        /// <summary>
-        /// Use to determine what type of structures support the connection
-        /// </summary>
-        /// <param name="connection"></param>
-        /// <returns>true if the connection is System.Data.SqlClient.SqlConnection; otherwise, 
-        /// returns false, indicating that it is Microsoft.Data.SqlClient.SqlConnection.</returns>
         internal static bool IsSystemConnection(IDbConnection connection)
         {
-            if (connection.GetType() == typeof(System.Data.SqlClient.SqlConnection))
-            {
-                return true;
-            }
-
             return false;
         }
     }

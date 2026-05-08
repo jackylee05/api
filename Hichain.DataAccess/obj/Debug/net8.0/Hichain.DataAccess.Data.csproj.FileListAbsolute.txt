@@ -1,5 +1,4 @@
 D:\test_trae\trae3\Hichain.DataAccess\bin\Debug\net8.0\Hichain.DataAccess.Data.deps.json
-D:\test_trae\trae3\Hichain.DataAccess\bin\Debug\net8.0\Hichain.DataAccess.Data.runtimeconfig.json
 D:\test_trae\trae3\Hichain.DataAccess\bin\Debug\net8.0\Hichain.DataAccess.Data.dll
 D:\test_trae\trae3\Hichain.DataAccess\bin\Debug\net8.0\Hichain.DataAccess.Data.pdb
 D:\test_trae\trae3\Hichain.DataAccess\bin\Debug\net8.0\Hichain.Common.dll
@@ -16,5 +15,4 @@ D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\Hichain..0A4DFF8C.Up2Date
 D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\Hichain.DataAccess.Data.dll
 D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\refint\Hichain.DataAccess.Data.dll
 D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\Hichain.DataAccess.Data.pdb
-D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\Hichain.DataAccess.Data.genruntimeconfig.cache
 D:\test_trae\trae3\Hichain.DataAccess\obj\Debug\net8.0\ref\Hichain.DataAccess.Data.dll

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 //using Microsoft.SqlServer.Types;
 using NetTopologySuite.Geometries;
@@ -17,7 +17,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 
 namespace Hichain.DataAccess.Data
@@ -48,7 +48,7 @@ namespace Hichain.DataAccess.Data
                 // separate logic for System.Data.SqlClient and Microsoft.Data.SqlClient
                 if (SqlClientHelper.IsSystemConnection(connection))
                 {
-                    using (var sqlBulkCopy = GetSqlBulkCopy((System.Data.SqlClient.SqlConnection)connection, transaction, tableInfo.BulkConfig))
+                    using (var sqlBulkCopy = GetSqlBulkCopy((Microsoft.Data.SqlClient.SqlConnection)connection, transaction, tableInfo.BulkConfig))
                     {
                         bool setColumnMapping = false;
                         tableInfo.SetSqlBulkCopyConfig(sqlBulkCopy, entities, setColumnMapping, progress);
@@ -508,35 +508,19 @@ namespace Hichain.DataAccess.Data
             }
         }
 
-        //private static System.Data.SqlClient.SqlBulkCopy GetSqlBulkCopy(System.Data.SqlClient.SqlConnection sqlConnection, IDbContextTransaction transaction, BulkConfig config)
+        //private static Microsoft.Data.SqlClient.SqlBulkCopy GetSqlBulkCopy(Microsoft.Data.SqlClient.SqlConnection sqlConnection, IDbContextTransaction transaction, BulkConfig config)
         //{
-        //    var sqlBulkCopyOptions = (System.Data.SqlClient.SqlBulkCopyOptions)config.SqlBulkCopyOptions;
+        //    var sqlBulkCopyOptions = (Microsoft.Data.SqlClient.SqlBulkCopyOptions)config.SqlBulkCopyOptions;
         //    if (transaction == null)
         //    {
-        //        return new System.Data.SqlClient.SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
+        //        return new Microsoft.Data.SqlClient.SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
         //    }
-            
-        //    var sqlTransaction = (System.Data.SqlClient.SqlTransaction)transaction.GetUnderlyingTransaction(config);
-        //    return new System.Data.SqlClient.SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
+
+        //    var sqlTransaction = (Microsoft.Data.SqlClient.SqlTransaction)transaction.GetUnderlyingTransaction(config);
+        //    return new Microsoft.Data.SqlClient.SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
         //}
 
 
-private static SqlBulkCopy GetSqlBulkCopy(
-    SqlConnection sqlConnection,
-    IDbContextTransaction transaction,
-    BulkConfig config)
-    {
-        var sqlBulkCopyOptions = (SqlBulkCopyOptions)config.SqlBulkCopyOptions;
-
-        if (transaction == null)
-        {
-            return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
-        }
-
-        var sqlTransaction = (SqlTransaction)transaction.GetDbTransaction();
-
-        return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
-    }
         #endregion
 
     #region DataTable
@@ -561,30 +545,8 @@ private static SqlBulkCopy GetSqlBulkCopy(
             return dataTable;
         }
 
-        /// <summary>
-        /// Supports <see cref="System.Data.SqlClient.SqlBulkCopy"/>
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="context"></param>
-        /// <param name="type"></param>
-        /// <param name="entities"></param>
-        /// <param name="sqlBulkCopy"></param>
-        /// <param name="tableInfo"></param>
-        /// <returns></returns>
-        internal static DataTable GetDataTable<T>(DbContext context, Type type, IList<T> entities, System.Data.SqlClient.SqlBulkCopy sqlBulkCopy, TableInfoEx tableInfo)
-        {
-            DataTable dataTable = InnerGetDataTable(context, ref type, entities, tableInfo);
-
-            foreach (DataColumn item in dataTable.Columns)  //Add mapping
-            {
-                sqlBulkCopy.ColumnMappings.Add(item.ColumnName, item.ColumnName);
-            }
-            return dataTable;
-        }
-        
-        
        /// <summary>
-        /// Common logic for two versions of GetDataTable
+        /// Common logic for GetDataTable
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="context"></param>
@@ -749,7 +711,7 @@ private static SqlBulkCopy GetSqlBulkCopy(
                     // If a model has an entity which has a relationship without an explicity defined FK, the data table will already contain the foreign key shadow property
                     if (dataTable.Columns.Contains(columnName))
                         continue;
-                    
+
                     var isConvertible = tableInfo.ConvertibleColumnConverterDict.ContainsKey(columnName);
                     var propertyType = isConvertible ? tableInfo.ConvertibleColumnConverterDict[columnName].ProviderClrType : shadowProperty.ClrType;
 

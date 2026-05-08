@@ -1,5 +1,4 @@
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.deps.json
-D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.runtimeconfig.json
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.dll
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\bin\Debug\net8.0\Hichain.DataAccess.Data.Repository.pdb
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\bin\Debug\net8.0\Hichain.Common.dll
@@ -20,5 +19,4 @@ D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\Hichain..
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\Hichain.DataAccess.Data.Repository.dll
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\refint\Hichain.DataAccess.Data.Repository.dll
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\Hichain.DataAccess.Data.Repository.pdb
-D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\Hichain.DataAccess.Data.Repository.genruntimeconfig.cache
 D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\obj\Debug\net8.0\ref\Hichain.DataAccess.Data.Repository.dll

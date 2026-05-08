@@ -1,5 +1,4 @@
 D:\test_trae\trae3\Hichain.Service\bin\Debug\net8.0\Hichain.Services.deps.json
-D:\test_trae\trae3\Hichain.Service\bin\Debug\net8.0\Hichain.Services.runtimeconfig.json
 D:\test_trae\trae3\Hichain.Service\bin\Debug\net8.0\Hichain.Services.dll
 D:\test_trae\trae3\Hichain.Service\bin\Debug\net8.0\Hichain.Services.pdb
 D:\test_trae\trae3\Hichain.Service\bin\Debug\net8.0\Hichain.Common.dll
@@ -22,5 +21,4 @@ D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\Hichain..0941281F.Up2Date
 D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\Hichain.Services.dll
 D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\refint\Hichain.Services.dll
 D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\Hichain.Services.pdb
-D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\Hichain.Services.genruntimeconfig.cache
 D:\test_trae\trae3\Hichain.Service\obj\Debug\net8.0\ref\Hichain.Services.dll

@@ -1,8 +1,6 @@
-using Dapper;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Reflection;
 using Hichain.Entity.Data;
