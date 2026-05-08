@@ -72,6 +72,48 @@
         }
       }
     },
+    "/api/Inbound/Dispatch": {
+      "post": {
+        "tags": [
+          "Inbound"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Users/Create": {
       "post": {
         "tags": [
@@ -123,6 +165,26 @@
   },
   "components": {
     "schemas": {
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "AuthResponse": {
         "type": "object",
         "properties": {
@@ -160,7 +222,15 @@
             "type": "string",
             "nullable": true
           },
-          "password": {
+          "timestamp": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nonce": {
+            "type": "string",
+            "nullable": true
+          },
+          "sign": {
             "type": "string",
             "nullable": true
           }

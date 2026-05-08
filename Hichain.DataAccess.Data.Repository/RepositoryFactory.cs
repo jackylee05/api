@@ -72,12 +72,12 @@ public class RepositoryFactory
                 database = new SqlServerDatabase(dbConnectionString);
                 break;
             case "MySql":
-                //DbHelper.DbType = DatabaseType.MySql;
-                // database = new MySqlDatabase(dbConnectionString);
+                DbHelper.DbType = DatabaseType.MySql;
+                database = new MySqlDatabase(dbConnectionString);
                 break;
             case "PostgreSql":
-                //DbHelper.DbType = DatabaseType.PostgreSql;
-                //database = new PostgreSqlDatabase(dbConnectionString);
+                DbHelper.DbType = DatabaseType.PostgreSql;
+                database = new PostgreSqlDatabase(dbConnectionString);
                 break;
             case "Oracle":
                 DbHelper.DbType = DatabaseType.Oracle;

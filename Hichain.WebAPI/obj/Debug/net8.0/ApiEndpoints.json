@@ -26,7 +26,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
+        "Name": "req",
         "Type": "Hichain.WebAPI.Controllers.LoginRequest",
         "IsRequired": true
       }
@@ -34,6 +34,32 @@
     "ReturnTypes": [
       {
         "Type": "Hichain.Common.Models.ApiResponse\u00601[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hichain.WebAPI.Controllers.InboundController",
+    "Method": "Dispatch",
+    "RelativePath": "api/Inbound/Dispatch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Hichain.Common.Models.ApiResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

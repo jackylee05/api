@@ -1,0 +1,6 @@
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.csproj.AssemblyReference.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.GeneratedMSBuildEditorConfig.editorconfig
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.AssemblyInfoInputs.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.AssemblyInfo.cs
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.csproj.CoreCompileInputs.cache
+D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.SqlServerDatabaseEF.sourcelink.json

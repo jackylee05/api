@@ -163,37 +163,37 @@ namespace Hichain.DataAccess.Data.EF
                                 prop.SetValue(entry.Entity, false);
                                 break;
                             case "Char":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (char)0);
                                 break;
                             case "SByte":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (sbyte)0);
                                 break;
                             case "Byte":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (byte)0);
                                 break;
                             case "Int16":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (short)0);
                                 break;
                             case "UInt16":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (ushort)0);
                                 break;
                             case "Int32":
                                 prop.SetValue(entry.Entity, 0);
                                 break;
                             case "UInt32":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (uint)0);
                                 break;
                             case "Int64":
-                                prop.SetValue(entry.Entity, (Int64)0);
+                                prop.SetValue(entry.Entity, (long)0);
                                 break;
                             case "UInt64":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (ulong)0);
                                 break;
                             case "Single":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (float)0);
                                 break;
                             case "Double":
-                                prop.SetValue(entry.Entity, 0);
+                                prop.SetValue(entry.Entity, (double)0);
                                 break;
                             case "Decimal":
                                 prop.SetValue(entry.Entity, (decimal)0);

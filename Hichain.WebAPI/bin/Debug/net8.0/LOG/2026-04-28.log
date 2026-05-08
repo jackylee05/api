@@ -1,0 +1,785 @@
+2026-04-28 10:49:34.8351|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 10:49:35.1428|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 10:49:35.5073|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 10:49:35.5866|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 10:49:35.5866|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 10:49:35.5866|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 10:55:57.7304|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 10:55:57.8573|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 10:55:57.9015|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 10:55:57.9151|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 6.9884ms 
+2026-04-28 10:55:57.9151|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 10:55:57.9875|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.InvalidOperationException: Unable to resolve service for type 'Hichain.Business.Services.IUserService' while attempting to activate 'Hichain.WebAPI.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 10:55:58.0680|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 345.9378ms 
+2026-04-28 10:56:24.4785|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/users - application/json 54 
+2026-04-28 10:56:24.5887|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/7 9:38:00', Current time (UTC): '2026/4/28 2:56:24'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-28 10:56:24.5971|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/7 9:38:00', Current time (UTC): '2026/4/28 2:56:24'. 
+2026-04-28 10:56:24.5971|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/users - 404 0 - 120.5673ms 
+2026-04-28 10:56:24.5971|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5903/api/users, Response status code: 404 
+2026-04-28 11:48:09.2908|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 11:48:09.5151|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 11:48:09.7513|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 11:48:09.8117|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 11:48:09.8117|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 11:48:09.8117|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 11:48:47.4325|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 11:48:47.5460|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:48:47.5844|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 11:48:47.5844|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 3.0015ms 
+2026-04-28 11:48:47.5844|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:48:47.6426|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.InvalidOperationException: Unable to resolve service for type 'Hichain.Business.Services.IUserService' while attempting to activate 'Hichain.WebAPI.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 11:48:47.6830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 255.3656ms 
+2026-04-28 11:49:33.9743|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 11:49:33.9743|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:49:33.9887|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 11:49:33.9887|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 0.7858ms 
+2026-04-28 11:49:33.9887|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:49:34.0141|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.InvalidOperationException: Unable to resolve service for type 'Hichain.Business.Services.IUserService' while attempting to activate 'Hichain.WebAPI.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 11:49:34.0194|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 45.2550ms 
+2026-04-28 11:50:40.3148|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 11:50:40.3148|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:50:40.3148|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 11:50:40.3148|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 0.7455ms 
+2026-04-28 11:50:40.3148|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:50:40.3558|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.InvalidOperationException: Unable to resolve service for type 'Hichain.Business.Services.IUserService' while attempting to activate 'Hichain.WebAPI.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 11:50:40.3558|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 48.1499ms 
+2026-04-28 11:51:39.4904|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 11:51:40.0541|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 11:51:40.5772|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 11:51:40.6900|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 11:51:40.6900|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 11:51:40.6900|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 11:51:53.1834|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 11:51:53.3332|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:51:53.3628|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 11:51:55.5864|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 2208.8831ms 
+2026-04-28 11:51:55.5864|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:51:55.6730|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.IO.FileNotFoundException: Could not load file or assembly 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Hichain.DataAccess.Data.EF.SqlServerDbContext.OnModelCreating(ModelBuilder modelBuilder) in D:\test_trae\trae3\SqlServerDatabaseEF\SqlServerDbContext.cs:line 49
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Hichain.DataAccess.Data.EF.SqlServerDatabase.FindList[T](Expression`1 condition) in D:\test_trae\trae3\SqlServerDatabaseEF\Database\SqlServerDatabase.cs:line 486
+   at Hichain.DataAccess.Data.Repository.Repository.FindList[T](Expression`1 condition) in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 269
+   at Hichain.Service.UserService.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Service.UserService.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\Services\UserBLL.cs:line 84
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 11:51:55.8329|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 2657.9402ms 
+2026-04-28 11:52:22.0429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 11:52:22.0429|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:52:22.0497|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 11:53:39.2845|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 77233.7705ms 
+2026-04-28 11:53:39.2845|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 11:53:39.3096|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.IO.FileNotFoundException: Could not load file or assembly 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Hichain.DataAccess.Data.EF.SqlServerDbContext.OnModelCreating(ModelBuilder modelBuilder) in D:\test_trae\trae3\SqlServerDatabaseEF\SqlServerDbContext.cs:line 49
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Hichain.DataAccess.Data.EF.SqlServerDatabase.FindList[T](Expression`1 condition) in D:\test_trae\trae3\SqlServerDatabaseEF\Database\SqlServerDatabase.cs:line 486
+   at Hichain.DataAccess.Data.Repository.Repository.FindList[T](Expression`1 condition) in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 269
+   at Hichain.Service.UserService.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Service.UserService.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\Services\UserBLL.cs:line 84
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 11:53:39.3617|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 77295.4443ms 
+2026-04-28 13:04:21.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 13:04:21.0364|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:04:21.0364|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 13:07:50.5663|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 209523.5256ms 
+2026-04-28 13:07:50.5663|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:09:22.5448|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.IO.FileNotFoundException: Could not load file or assembly 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Hichain.DataAccess.Data.EF.SqlServerDbContext.OnModelCreating(ModelBuilder modelBuilder) in D:\test_trae\trae3\SqlServerDatabaseEF\SqlServerDbContext.cs:line 49
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Hichain.DataAccess.Data.EF.SqlServerDatabase.FindList[T](Expression`1 condition) in D:\test_trae\trae3\SqlServerDatabaseEF\Database\SqlServerDatabase.cs:line 486
+   at Hichain.DataAccess.Data.Repository.Repository.FindList[T](Expression`1 condition) in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 269
+   at Hichain.Service.UserService.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Service.UserService.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\Services\UserBLL.cs:line 84
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 13:09:22.5695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 301532.1283ms 
+2026-04-28 13:09:26.3159|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 13:09:26.3159|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:09:26.3159|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 13:12:39.0968|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 192777.9786ms 
+2026-04-28 13:12:39.0968|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:12:39.1233|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.IO.FileNotFoundException: Could not load file or assembly 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'GLSCM.Entity, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.<InternalLoad>g____PInvoke|49_0(NativeAssemblyNameParts* __pAssemblyNameParts_native, ObjectHandleOnStack __requestingAssembly_native, StackCrawlMarkHandle __stackMark_native, Int32 __throwOnFileNotFound_native, ObjectHandleOnStack __assemblyLoadContext_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Hichain.DataAccess.Data.EF.SqlServerDbContext.OnModelCreating(ModelBuilder modelBuilder) in D:\test_trae\trae3\SqlServerDatabaseEF\SqlServerDbContext.cs:line 49
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelCustomizer.Customize(ModelBuilder modelBuilder, DbContext context)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, ModelDependencies modelDependencies)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Hichain.DataAccess.Data.EF.SqlServerDatabase.FindList[T](Expression`1 condition) in D:\test_trae\trae3\SqlServerDatabaseEF\Database\SqlServerDatabase.cs:line 486
+   at Hichain.DataAccess.Data.Repository.Repository.FindList[T](Expression`1 condition) in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 269
+   at Hichain.Service.UserService.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Service.UserService.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\Services\UserBLL.cs:line 84
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 13:12:39.1761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 192833.4692ms 
+2026-04-28 13:28:34.7748|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 13:28:34.7748|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:28:34.7748|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 13:34:13.8307|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 13:34:13.8307|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 339061.9735ms 
+2026-04-28 13:34:13.8307|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:34:13.8307|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 339071.2638ms 
+2026-04-28 13:35:44.4321|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 13:35:44.6913|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 13:35:44.9127|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 13:35:44.9732|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 13:35:44.9732|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 13:35:44.9732|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 13:36:05.7481|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 13:36:05.8532|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:36:05.8754|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 13:36:10.0520|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 13:36:10.0763|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 4191.7215ms 
+2026-04-28 13:36:10.0763|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:36:10.0878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 4349.1017ms 
+2026-04-28 13:37:48.9177|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 13:37:49.1914|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 13:37:49.4687|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 13:37:49.5241|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 13:37:49.5241|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 13:37:49.5241|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 13:37:58.0028|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 52 
+2026-04-28 13:37:58.1095|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:37:58.1349|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 13:38:04.8459|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 13:38:04.8734|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 6727.2799ms 
+2026-04-28 13:38:04.8734|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 13:38:04.8884|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 6891.6885ms 
+2026-04-28 13:46:08.6131|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/index.html - - - 
+2026-04-28 13:46:08.9780|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/index.html - 200 - text/html;charset=utf-8 365.0599ms 
+2026-04-28 13:46:09.0285|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-bundle.js - - - 
+2026-04-28 13:46:09.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui.css - - - 
+2026-04-28 13:46:09.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/_framework/aspnetcore-browser-refresh.js - - - 
+2026-04-28 13:46:09.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript;+charset=utf-8 12.4583ms 
+2026-04-28 13:46:09.0583|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/_vs/browserLink - - - 
+2026-04-28 13:46:09.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-standalone-preset.js - - - 
+2026-04-28 13:46:09.1591|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2026-04-28 13:46:09.1591|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui.css - 200 152034 text/css 127.8884ms 
+2026-04-28 13:46:09.1591|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2026-04-28 13:46:09.1591|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 136.5222ms 
+2026-04-28 13:46:09.1797|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2026-04-28 13:46:09.1797|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 157.0885ms 
+2026-04-28 13:46:09.2695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 211.2984ms 
+2026-04-28 13:46:09.4818|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/favicon-32x32.png - - - 
+2026-04-28 13:46:09.4818|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/swagger/v1/swagger.json - - - 
+2026-04-28 13:46:09.4818|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2026-04-28 13:46:09.4891|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/favicon-32x32.png - 200 628 image/png 7.3447ms 
+2026-04-28 13:46:09.5245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 42.8386ms 
+2026-04-28 13:46:34.1973|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/.well-known/appspecific/com.chrome.devtools.json - - - 
+2026-04-28 13:46:34.2429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/.well-known/appspecific/com.chrome.devtools.json - 404 0 - 45.6295ms 
+2026-04-28 13:46:34.2429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5903/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404 
+2026-04-28 13:49:38.8238|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:49:38.8747|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported' 
+2026-04-28 13:49:38.8747|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported' 
+2026-04-28 13:49:38.8783|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5903/api/Users/Create - 405 0 - 55.1192ms 
+2026-04-28 13:49:47.4761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:49:47.4865|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 13:49:47.4865|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 13:49:47.4865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 13.3588ms 
+2026-04-28 13:49:51.0618|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:49:51.0618|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 13:49:51.0648|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 13:49:51.0648|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 3.3494ms 
+2026-04-28 13:50:22.9325|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:50:22.9325|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 13:50:22.9325|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 13:50:22.9325|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 3.1274ms 
+2026-04-28 13:50:26.0184|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:50:26.0184|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 13:50:26.0184|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 13:50:26.0184|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 2.6672ms 
+2026-04-28 13:50:56.6699|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 13:50:56.8877|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 13:50:57.1115|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 13:50:57.1603|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 13:50:57.1603|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 13:50:57.1603|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 13:51:11.8462|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 13:51:12.0244|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 13:51:12.0442|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.Entity.Entities.User]]] Create(Hichain.Entity.Entities.User) on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-28 13:51:13.5786|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 13:51:13.5945|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI) in 1543.116ms 
+2026-04-28 13:51:13.5945|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 13:51:13.6007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 200 - application/json;+charset=utf-8 1759.7102ms 
+2026-04-28 14:03:31.9111|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 14:03:32.1781|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 14:03:32.4355|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 14:03:32.4951|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 14:03:32.4951|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 14:03:32.4951|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 14:04:07.2775|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 14:04:07.4501|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 14:04:07.4501|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 14:04:07.4628|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 192.1510ms 
+2026-04-28 14:04:11.9397|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 14:04:11.9397|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 14:04:11.9397|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was forbidden. 
+2026-04-28 14:04:11.9397|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 403 0 - 6.9922ms 
+2026-04-28 14:04:33.4008|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 14:04:33.4139|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 14:04:33.4492|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 14:04:40.3130|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 14:04:40.3420|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 6874.1913ms 
+2026-04-28 14:04:40.3420|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 14:04:40.3514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 6950.6847ms 
+2026-04-28 14:05:15.4719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 14:05:15.4719|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 14:05:15.4901|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.Entity.Entities.User]]] Create(Hichain.Entity.Entities.User) on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-28 14:05:16.2759|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.Entity.Entities.User, Hichain.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 14:05:16.2847|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI) in 792.9962ms 
+2026-04-28 14:05:16.2847|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 14:05:16.2847|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 200 - application/json;+charset=utf-8 818.4718ms 
+2026-04-28 15:18:11.9824|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 15:18:12.2301|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 15:18:12.5663|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 15:18:12.6318|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 15:18:12.6318|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 15:18:12.6318|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 15:18:21.2347|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 15:18:21.4212|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/28 7:04:40', Current time (UTC): '2026/4/28 7:18:21'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-28 15:18:21.4422|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/28 7:04:40', Current time (UTC): '2026/4/28 7:18:21'. 
+2026-04-28 15:18:21.4422|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 15:18:21.4560|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2026-04-28 15:18:21.4560|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 401 0 - 239.4571ms 
+2026-04-28 15:18:26.4658|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 15:18:26.4717|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token. Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/28 7:04:40', Current time (UTC): '2026/4/28 7:18:26'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-04-28 15:18:26.4717|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2026/4/28 7:04:40', Current time (UTC): '2026/4/28 7:18:26'. 
+2026-04-28 15:18:26.4717|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2026-04-28 15:18:26.4717|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2026-04-28 15:18:26.4717|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 401 0 - 11.8743ms 
+2026-04-28 15:18:33.1895|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 15:18:33.1940|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 15:18:33.2170|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 15:18:45.6926|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 15:18:45.7392|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 12499.1377ms 
+2026-04-28 15:18:45.7392|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 15:18:45.7602|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 12570.6008ms 
+2026-04-28 15:19:01.8519|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 15:19:01.8933|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 15:19:01.9157|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.Entity.Entities.User]]] Create(Hichain.Entity.Entities.User) on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-28 17:30:08.9445|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 17:30:09.4870|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 17:30:10.0149|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 17:30:10.1577|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 17:30:10.1596|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 17:30:10.1596|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 17:30:29.2660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:30:29.4729|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:30:29.5111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:30:33.7715|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 4249.8359ms 
+2026-04-28 17:30:33.7715|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:30:33.8299|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 System.Exception: 未找到数据库配置
+   at Hichain.DataAccess.Data.Repository.RepositoryFactory.BaseRepository() in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\RepositoryFactory.cs:line 51
+   at Hichain.Services.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Services.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\UserBLL.cs:line 31
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 17:30:33.8771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 4626.1938ms 
+2026-04-28 17:30:43.7059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:30:43.7059|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:30:43.7059|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:32:33.5885|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 17:32:33.9883|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 17:32:34.3641|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 17:32:34.4612|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 17:32:34.4612|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 17:32:34.4612|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 17:32:51.6038|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:32:51.7290|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:32:51.7618|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:33:27.0766|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 35301.732ms 
+2026-04-28 17:33:27.0766|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:33:44.9109|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 17:33:45.4348|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 17:33:45.9627|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 17:33:46.1259|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 17:33:46.1272|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 17:33:46.1272|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 17:33:55.6975|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:33:56.0074|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:33:56.0714|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:35:52.2800|INFO|Program|Hichain.WebAPI starting up. 
+2026-04-28 17:35:52.6972|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2026-04-28 17:35:53.1595|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:5903 
+2026-04-28 17:35:53.2506|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2026-04-28 17:35:53.2506|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2026-04-28 17:35:53.2506|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\test_trae\trae3\Hichain.WebAPI 
+2026-04-28 17:36:03.9629|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:36:04.2223|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:36:04.2789|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:36:14.2192|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 9926.879ms 
+2026-04-28 17:36:14.2224|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:36:14.6803|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 Npgsql.PostgresException (0x80004005): 42703: 字段 u.id 不存在
+
+POSITION: 8
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Hichain.DataAccess.Data.EF.PostgreSqlDatabase.FindList[T](Expression`1 condition) in D:\test_trae\trae3\SqlServerDatabaseEF\Database\PostgreSqlDatabase.cs:line 498
+   at Hichain.DataAccess.Data.Repository.Repository.FindList[T](Expression`1 condition) in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 269
+   at Hichain.Services.UserService.GetList(Expression`1 paramFilter) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 39
+   at Hichain.Services.UserService.GetEntity(String username) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 34
+   at Hichain.Business.UserBLL.GetUserByUsernameAsync(String username) in D:\test_trae\trae3\Hichain.Business\UserBLL.cs:line 31
+   at Hichain.WebAPI.Controllers.AuthController.Login(LoginRequest request) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\AuthController.cs:line 37
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+  Exception data:
+    Severity: 错误
+    SqlState: 42703
+    MessageText: 字段 u.id 不存在
+    Hint: 也许您想要引用列"u.Id"。
+    Position: 8
+    File: parse_relation.c
+    Line: 3338
+    Routine: errorMissingColumn
+2026-04-28 17:36:14.7598|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 500 - application/json 10814.8857ms 
+2026-04-28 17:38:05.7800|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:38:05.7833|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:38:05.7833|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:38:07.6032|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 17:38:07.6032|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 1823.6827ms 
+2026-04-28 17:38:07.6032|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:38:07.6032|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 1830.4293ms 
+2026-04-28 17:53:00.9264|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/auth/login - application/json 54 
+2026-04-28 17:53:00.9264|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:53:00.9264|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.WebAPI.Controllers.AuthResponse]]] Login(Hichain.WebAPI.Controllers.LoginRequest) on controller Hichain.WebAPI.Controllers.AuthController (Hichain.WebAPI). 
+2026-04-28 17:53:03.3153|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Hichain.Common.Models.ApiResponse`1[[Hichain.WebAPI.Controllers.AuthResponse, Hichain.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2026-04-28 17:53:03.3153|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI) in 2371.9965ms 
+2026-04-28 17:53:03.3153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.AuthController.Login (Hichain.WebAPI)' 
+2026-04-28 17:53:03.3153|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/auth/login - 200 - application/json;+charset=utf-8 2424.5325ms 
+2026-04-28 17:53:27.7160|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 17:53:28.0330|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 17:53:28.0636|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.Entity.Entities.User]]] Create(Hichain.Entity.Entities.User) on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-28 17:53:29.3317|ERROR||An error occurred while saving the entity changes. See the inner exception for details.
+23505: 重复键违反唯一约束"PK_Users"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Hichain.DataAccess.Data.EF.PostgreSqlDatabase.CommitTrans() in D:\test_trae\trae3\SqlServerDatabaseEF\Database\PostgreSqlDatabase.cs:line 76
+ 
+2026-04-28 17:53:32.2037|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI) in 4107.3553ms 
+2026-04-28 17:53:32.2068|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 17:53:32.7131|ERROR|Hichain.WebAPI.Middleware.GlobalExceptionMiddleware|发生未处理的异常 Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: 重复键违反唯一约束"PK_Users"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: 错误
+    SqlState: 23505
+    MessageText: 重复键违反唯一约束"PK_Users"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: users
+    ConstraintName: PK_Users
+    File: nbtinsert.c
+    Line: 534
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Hichain.DataAccess.Data.EF.PostgreSqlDatabase.CommitTrans() in D:\test_trae\trae3\SqlServerDatabaseEF\Database\PostgreSqlDatabase.cs:line 91
+   at Hichain.DataAccess.Data.EF.PostgreSqlDatabase.CommitTrans() in D:\test_trae\trae3\SqlServerDatabaseEF\Database\PostgreSqlDatabase.cs:line 99
+   at Hichain.DataAccess.Data.Repository.Repository.CommitTrans() in D:\test_trae\trae3\Hichain.DataAccess.Data.Repository\Repository.cs:line 36
+   at Hichain.Services.UserService.CreateUserAsync(User entity) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 22
+   at Hichain.Services.UserService.CreateUserAsync(User entity) in D:\test_trae\trae3\Hichain.Service\UserService.cs:line 27
+   at Hichain.Business.UserBLL.CreateUserAsync(User user) in D:\test_trae\trae3\Hichain.Business\UserBLL.cs:line 46
+   at Hichain.WebAPI.Controllers.UsersController.Create(User user) in D:\test_trae\trae3\Hichain.WebAPI\Controllers\UsersController.cs:line 27
+   at lambda_method76(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hichain.WebAPI.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\test_trae\trae3\Hichain.WebAPI\Middleware\GlobalExceptionMiddleware.cs:line 25
+2026-04-28 17:53:32.9375|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5903/api/Users/Create - 500 - application/json 5221.3744ms 
+2026-04-28 17:53:59.1514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5903/api/Users/Create - application/json 270 
+2026-04-28 17:53:59.1623|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Hichain.WebAPI.Controllers.UsersController.Create (Hichain.WebAPI)' 
+2026-04-28 17:53:59.1623|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hichain.Common.Models.ApiResponse`1[Hichain.Entity.Entities.User]]] Create(Hichain.Entity.Entities.User) on controller Hichain.WebAPI.Controllers.UsersController (Hichain.WebAPI). 
+2026-04-28 17:53:59.3836|ERROR||An error occurred while saving the entity changes. See the inner exception for details.
+23505: 重复键违反唯一约束"PK_Users"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Hichain.DataAccess.Data.EF.PostgreSqlDatabase.CommitTrans() in D:\test_trae\trae3\SqlServerDatabaseEF\Database\PostgreSqlDatabase.cs:line 76
+ 

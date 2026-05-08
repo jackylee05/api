@@ -18,6 +18,16 @@ public class AppDbContext : DbContext
     /// </summary>
     public DbSet<User> Users { get; set; }
 
+    /// <summary>
+    /// 入库单表头
+    /// </summary>
+    public DbSet<Inbound> Inbound { get; set; }
+
+    /// <summary>
+    /// 入库单明细表体
+    /// </summary>
+    public DbSet<InboundPart> InboundParts { get; set; }
+
 
     /// <summary>
     /// 构造函数
@@ -40,6 +50,22 @@ public class AppDbContext : DbContext
 
         // 配置表名
         modelBuilder.Entity<User>().ToTable("Users");
+
+        // 配置 WMS_Inbound 实体
+        modelBuilder.Entity<Inbound>(entity =>
+        {
+            entity.ToTable("WMS_Inbound");
+            entity.HasKey(e => e.InboundID);
+            // 忽略导航属性（不映射到数据库）
+            entity.Ignore(e => e.InboundParts);
+        });
+
+        // 配置 WMS_InboundPart 实体
+        modelBuilder.Entity<InboundPart>(entity =>
+        {
+            entity.ToTable("InboundPart");
+            entity.HasKey(e => e.InboundPartID);
+        });
 
         // 种子数据
         SeedData(modelBuilder);

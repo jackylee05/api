@@ -45,7 +45,6 @@ public class GlobalExceptionMiddleware
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
-
         return context.Response.WriteAsync(JsonSerializer.Serialize(response, options));
     }
 }

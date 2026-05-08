@@ -10,6 +10,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 using System.Text;
 
 namespace Hichain.DataAccess.Data.EF
@@ -23,10 +24,27 @@ namespace Hichain.DataAccess.Data.EF
         /// The SetPrimaryKey.
         /// </summary>
         /// <param name="modelBuilder">The modelBuilder<see cref="ModelBuilder"/>.</param>
-        /// <param name="entityName">The entityName<see cref="string"/>.</param>
+        /// <param name="clrType">The clrType<see cref="Type"/>.</param>
         public static void SetPrimaryKey(ModelBuilder builder, Type clrType)
         {
-            builder.Entity(clrType).HasKey("Id");
+            // 检查实体是否已经通过 [Key] 特性定义了主键
+            var keyProperty = clrType.GetProperties()
+                .FirstOrDefault(p => p.GetCustomAttributes(typeof(System.ComponentModel.DataAnnotations.KeyAttribute), true).Any());
+
+            if (keyProperty != null)
+            {
+                // 如果已经有 [Key] 特性，使用该属性作为主键
+                builder.Entity(clrType).HasKey(keyProperty.Name);
+            }
+            else
+            {
+                // 否则尝试使用 "Id" 作为主键（默认约定）
+                var idProperty = clrType.GetProperty("Id");
+                if (idProperty != null)
+                {
+                    builder.Entity(clrType).HasKey("Id");
+                }
+            }
         }
     }
 
