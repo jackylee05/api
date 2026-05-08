@@ -1,5 +1,4 @@
 D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.Business.deps.json
-D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.Business.runtimeconfig.json
 D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.Business.pdb
 D:\test_trae\trae3\Hichain.Business\bin\Debug\net8.0\Hichain.Common.dll
@@ -24,5 +23,4 @@ D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain..BD136DFA.Up2Date
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\refint\Hichain.Business.dll
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain.Business.pdb
-D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\Hichain.Business.genruntimeconfig.cache
 D:\test_trae\trae3\Hichain.Business\obj\Debug\net8.0\ref\Hichain.Business.dll
