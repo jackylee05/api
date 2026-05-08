@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\test_trae\\trae3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\sqlserveradapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|solutionrelative:hichain.dataaccess\\sqlserveradapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\sqlclienthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|solutionrelative:hichain.dataaccess\\sqlclienthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|solutionrelative:hichain.dataaccess\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|d:\\test_trae\\trae3\\hichain.business\\inboundbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66F64BD4-9A24-70F3-3931-71236B147182}|Hichain.Business\\Hichain.Business.csproj|solutionrelative:hichain.business\\inboundbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|solutionrelative:hichain.dataaccess\\sqladaptersmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|d:\\test_trae\\trae3\\hichain.dataaccess\\sqlserveradapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAC02959-9D70-E5C0-4604-9D2835AB95EF}|Hichain.DataAccess\\Hichain.DataAccess.Data.csproj|solutionrelative:hichain.dataaccess\\sqlserveradapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|d:\\test_trae\\trae3\\hichain.common\\utilities\\signhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D70F916-5EE2-8FD7-182D-B3E2BA789ED7}|Hichain.Common\\Hichain.Common.csproj|solutionrelative:hichain.common\\utilities\\signhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,15 +114,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "SqlClientHelper.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\SqlClientHelper.cs",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\SqlClientHelper.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\SqlClientHelper.cs",
+              "RelativeToolTip": "Hichain.DataAccess\\SqlClientHelper.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:03:25.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\DbHelper.cs",
+              "RelativeDocumentMoniker": "Hichain.DataAccess\\DbHelper.cs",
+              "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\DbHelper.cs",
+              "RelativeToolTip": "Hichain.DataAccess\\DbHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:53:39.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess.Data.Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Hichain.DataAccess.Data.Repository\\Repository.cs",
@@ -127,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "InboundBLL.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\InboundBLL.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\InboundBLL.cs",
@@ -140,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\AuthController.cs",
@@ -153,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "InboundController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\InboundController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\InboundController.cs",
@@ -166,19 +216,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "SqlServerAdapter.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\SqlServerAdapter.cs",
               "RelativeDocumentMoniker": "Hichain.DataAccess\\SqlServerAdapter.cs",
               "ToolTip": "D:\\test_trae\\trae3\\Hichain.DataAccess\\SqlServerAdapter.cs",
               "RelativeToolTip": "Hichain.DataAccess\\SqlServerAdapter.cs",
-              "ViewState": "AgIAACUBAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIQBAAAAAAAAAADwvzACAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T07:55:39.607Z"
+              "WhenOpened": "2026-04-30T07:55:39.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "InboundService.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Service\\InboundService.cs",
               "RelativeDocumentMoniker": "Hichain.Service\\InboundService.cs",
@@ -191,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "InboundPartParam.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Models\\InboundPartParam.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Models\\InboundPartParam.cs",
@@ -203,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\appsettings.json",
@@ -216,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Inbound.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Entities\\Inbound.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Entities\\Inbound.cs",
@@ -228,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Data\\AppDbContext.cs",
@@ -240,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Controllers\\UsersController.cs",
@@ -252,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "UserBLL.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Business\\UserBLL.cs",
               "RelativeDocumentMoniker": "Hichain.Business\\UserBLL.cs",
@@ -265,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Entity\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Hichain.Entity\\Entities\\BaseEntity.cs",
@@ -277,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Hichain.WebAPI\\Program.cs",
@@ -289,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "SqlAdaptersMapping.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.DataAccess\\SqlAdaptersMapping.cs",
               "RelativeDocumentMoniker": "Hichain.DataAccess\\SqlAdaptersMapping.cs",
@@ -301,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "SignHelper.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\SignHelper.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\SignHelper.cs",
@@ -313,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "DbContextExtension.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContextExtension.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContextExtension.cs",
@@ -325,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Hichain.DataAccess.Data.EF.csproj",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\Hichain.DataAccess.Data.EF.csproj",
@@ -337,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "PostgreDbContext.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\SqlServerDatabaseEF\\DbContext\\PostgreDbContext.cs",
               "RelativeDocumentMoniker": "SqlServerDatabaseEF\\DbContext\\PostgreDbContext.cs",
@@ -349,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Extension.Convert.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Convert.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Convert.cs",
@@ -361,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "DingdingToken.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Models\\DingdingToken.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Models\\DingdingToken.cs",
@@ -373,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "DingdingHelpEx.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\DingdingHelpEx.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\DingdingHelpEx.cs",
@@ -385,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "WeixinPushHelp.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\WeixinPushHelp.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\WeixinPushHelp.cs",
@@ -397,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Extension.Exception.cs",
               "DocumentMoniker": "D:\\test_trae\\trae3\\Hichain.Common\\Utilities\\Extension.Exception.cs",
               "RelativeDocumentMoniker": "Hichain.Common\\Utilities\\Extension.Exception.cs",

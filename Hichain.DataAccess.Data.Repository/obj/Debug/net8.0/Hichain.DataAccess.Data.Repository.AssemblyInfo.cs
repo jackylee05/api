@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hichain.DataAccess.Data.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c59854ca7c4d676d7b0f03c1df14c4305047a125")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0b45bf7de1cd12d96a399f68ab1e5fd31f3d34c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hichain.DataAccess.Data.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hichain.DataAccess.Data.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

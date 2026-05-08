@@ -522,18 +522,18 @@ namespace Hichain.DataAccess.Data
 
         #endregion
 
-    #region DataTable
-    /// <summary>
-    /// Supports <see cref="Microsoft.Data.SqlClient.SqlBulkCopy"/>
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="context"></param>
-    /// <param name="type"></param>
-    /// <param name="entities"></param>
-    /// <param name="sqlBulkCopy"></param>
-    /// <param name="tableInfo"></param>
-    /// <returns></returns>
-    internal static DataTable GetDataTable<T>(DbContext context, Type type, IList<T> entities, Microsoft.Data.SqlClient.SqlBulkCopy sqlBulkCopy, TableInfoEx tableInfo)
+        #region DataTable
+        /// <summary>
+        /// Supports <see cref="Microsoft.Data.SqlClient.SqlBulkCopy"/>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="context"></param>
+        /// <param name="type"></param>
+        /// <param name="entities"></param>
+        /// <param name="sqlBulkCopy"></param>
+        /// <param name="tableInfo"></param>
+        /// <returns></returns>
+        internal static DataTable GetDataTable<T>(DbContext context, Type type, IList<T> entities, Microsoft.Data.SqlClient.SqlBulkCopy sqlBulkCopy, TableInfoEx tableInfo)
         {
             DataTable dataTable = InnerGetDataTable(context, ref type, entities, tableInfo);
 
@@ -543,23 +543,23 @@ namespace Hichain.DataAccess.Data
             }
             return dataTable;
         }
-  private static SqlBulkCopy GetSqlBulkCopy(
-    SqlConnection sqlConnection,
-    IDbContextTransaction transaction,
-    BulkConfig config)
-    {
-        var sqlBulkCopyOptions = (SqlBulkCopyOptions)config.SqlBulkCopyOptions;
+        //private static SqlBulkCopy GetSqlBulkCopy(
+        //  SqlConnection sqlConnection,
+        //  IDbContextTransaction transaction,
+        //  BulkConfig config)
+        //{
+        //    var sqlBulkCopyOptions = (SqlBulkCopyOptions)config.SqlBulkCopyOptions;
 
-        if (transaction == null)
-        {
-            return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
-        }
+        //    if (transaction == null)
+        //    {
+        //        return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
+        //    }
 
-        var sqlTransaction = (SqlTransaction)transaction.GetDbTransaction();
+        //    var sqlTransaction = (SqlTransaction)transaction.GetDbTransaction();
 
-        return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
-    }
-       /// <summary>
+        //    return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
+        //}
+        /// <summary>
         /// Common logic for GetDataTable
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -864,6 +864,6 @@ namespace Hichain.DataAccess.Data
             }
             return discriminatorColumn;
         }
-       #endregion
+        #endregion
     }
 }
