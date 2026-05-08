@@ -559,7 +559,22 @@ namespace Hichain.DataAccess.Data
             }
             return dataTable;
         }
+  private static SqlBulkCopy GetSqlBulkCopy(
+    SqlConnection sqlConnection,
+    IDbContextTransaction transaction,
+    BulkConfig config)
+    {
+        var sqlBulkCopyOptions = (SqlBulkCopyOptions)config.SqlBulkCopyOptions;
 
+        if (transaction == null)
+        {
+            return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
+        }
+
+        var sqlTransaction = (SqlTransaction)transaction.GetDbTransaction();
+
+        return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
+    }
        /// <summary>
         /// Common logic for GetDataTable
         /// </summary>
