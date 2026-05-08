@@ -520,22 +520,6 @@ namespace Hichain.DataAccess.Data
         //    return new Microsoft.Data.SqlClient.SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
         //}
 
-			private static SqlBulkCopy GetSqlBulkCopy(
-				SqlConnection sqlConnection,
-				IDbContextTransaction transaction,
-				BulkConfig config)
-				{
-					var sqlBulkCopyOptions = (SqlBulkCopyOptions)config.SqlBulkCopyOptions;
-
-					if (transaction == null)
-					{
-						return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, null);
-					}
-
-					var sqlTransaction = (SqlTransaction)transaction.GetDbTransaction();
-
-					return new SqlBulkCopy(sqlConnection, sqlBulkCopyOptions, sqlTransaction);
-				}
         #endregion
 
     #region DataTable
