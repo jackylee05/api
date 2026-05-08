@@ -1,5 +1,4 @@
 D:\test_trae\trae3\SqlServerDatabaseEF\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.deps.json
-D:\test_trae\trae3\SqlServerDatabaseEF\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.runtimeconfig.json
 D:\test_trae\trae3\SqlServerDatabaseEF\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.dll
 D:\test_trae\trae3\SqlServerDatabaseEF\bin\Debug\net8.0\Hichain.DataAccess.Data.EF.pdb
 D:\test_trae\trae3\SqlServerDatabaseEF\bin\Debug\net8.0\Hichain.Common.dll
@@ -18,5 +17,4 @@ D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain..A0F78DA9.Up2Dat
 D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.EF.dll
 D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\refint\Hichain.DataAccess.Data.EF.dll
 D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.EF.pdb
-D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\Hichain.DataAccess.Data.EF.genruntimeconfig.cache
 D:\test_trae\trae3\SqlServerDatabaseEF\obj\Debug\net8.0\ref\Hichain.DataAccess.Data.EF.dll
