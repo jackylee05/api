@@ -15,7 +15,6 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Reflection;
 
